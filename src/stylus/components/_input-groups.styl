@@ -1,0 +1,302 @@
+@import '../bootstrap'
+@import '../theme'
+
+/* Theme */
+input-group($material)
+  input,
+  textarea
+    color: $material.text.primary
+
+    &:disabled
+      color: $material.text.disabled
+
+  &:not(.vf-input-group--error) .vf-input-group__messages
+    color: $material.text.secondary
+
+  &.vf-input-group--textarea:not(.vf-input-group--full-width)
+    .vf-input-group__input
+      border: 2px solid $material.text.secondary
+
+  // This is specific for selects
+  &.vf-input-group--dirty
+    .vf-input-group__selections__comma
+      &:not(.vf-input-group__selections__comma--active)
+        color: $material.text.primary
+
+  &:not(.vf-input-group--error)
+    label
+      color: $material.text.secondary
+
+    &.vf-input-group--disabled
+      label,
+      .vf-input-group__selections__comma
+        color: $material.text.disabled
+
+    .vf-input-group__details:before
+      background-color: $material.input-bottom-line
+
+    &:not(.vf-input-group--focused):not(.vf-input-group--disabled)
+      .vf-input-group__input
+        .vf-input-group__append-icon,
+        .vf-input-group__prepend-icon
+          &:not(:hover)
+            color: $material.text.secondary
+
+      &:not(.vf-input-group--disabled):not(.vf-input-group--overflow):not(.vf-input-group--segmented):not(.vf-input-group--editable):hover
+        .input-group__details:before
+          background-color: $material.text.primary
+
+        &.vf-input-group--textarea:not(.vf-input-group--full-width)
+          .vf-input-group__input
+            border-color: $material.text.primary
+
+  &.vf-input-group
+    &--overflow, &--segmented, &--editable
+      .vf-input-group__input,
+      .vf-input-group__details
+        &:before
+          background-color: $material.dividers
+
+  &.vf-input-group--disabled
+    .vf-input-group__input
+      .vf-input-group__append-icon,
+      .vf-input-group__prepend-icon
+        color: $material.text.disabled
+
+    .vf-input-group__details:before
+      background-color: transparent
+      background-image: linear-gradient(
+        to right,
+        $material.text.disabled 0,
+        $material.text.disabled 33%,
+        transparent 0
+      )
+
+  .vf-input-group--text-field
+    &__prefix, &__suffix
+      color: $material.text.secondary
+
+    &.vf-input-group--disabled
+      &__prefix, &__suffix
+        color: $material.text.disabled
+
+theme(input-group, "vf-input-group")
+
+.vf-input-group
+  display: flex
+  flex: 1 1
+  flex-wrap: wrap
+  min-width: 24px
+  padding: $input-group-padding
+  position: relative
+  width: 100%
+  outline: none
+  transition: box-shadow $primary-transition
+
+
+/** Label */
+.vf-input-group
+  label
+    display: inline-block
+    font-size: $input-font-size
+    line-height: $input-height
+    height: $input-height
+    max-width: 90%
+    min-width: 0
+    overflow: hidden
+    pointer-events: none
+    text-align: left
+    text-overflow: ellipsis
+    transform-origin: top left
+    transition: .4s $transition.fast-in-fast-out
+    white-space: nowrap
+    width: 100%
+    z-index: 0
+
+/** Blocks */
+.vf-input-group
+  &__input
+    display: flex
+    flex: 1 0 100%
+    min-width: 0
+    min-height: $input-height
+
+/** Icons */
+.vf-input-group
+  &__icon-cb
+    cursor: pointer
+
+.vf-input-group
+  &.vf-input-group--focused,
+  &.vf-input-group--error
+    .vf-input-group__append-icon,
+    .vf-input-group__prepend-icon
+      color: inherit
+
+  &.vf-input-group--append-icon, &.vf-input-group--selection-controls
+    label
+      max-width: 75%
+
+  &.vf-input-group--prepend-icon
+    label
+      max-width: 75%
+
+  &.vf-input-group--append-icon.vf-input-group--prepend-icon
+    label
+      max-width: 65%
+
+  .vf-input-group__append-icon
+    padding: 0 6px
+    transition: .3s $transition.ease-in-out
+
+  .vf-input-group__append-icon,
+  .vf-input-group__prepend-icon
+    align-self: center
+    user-select: none
+
+/** States */
+.vf-input-group
+  // Single Line
+  &.vf-input-group--single-line,
+  &.vf-input-group--solo
+    &.vf-input-group--dirty
+      label
+        display: none
+
+  // Solo
+  &.vf-input-group--solo
+    background: #fff
+    min-height: 46px
+    border-radius: $card-border-radius
+    padding: 0
+    elevation(2)
+
+    label
+      top: 8px
+      padding-left: 16px
+      transform: none !important
+
+    .vf-input-group__input
+      align-items: center
+      padding: 8px 16px
+
+    .vf-input-group__details
+      display: none
+
+  &--disabled
+    .vf-input-group__details:before
+      background-color: transparent
+      background-position: bottom
+      background-size: 3px 1px
+      background-repeat: repeat-x
+
+  // Focused
+  &.vf-input-group--text-field
+    &:not(.vf-input-group--single-line):not(.vf-input-group--error)
+      &.vf-input-group--focused
+        label
+          color: inherit
+
+        .vf-input-group__input
+          border-color: inherit
+
+    &.vf-input-group--focused
+      &:not(.vf-input-group--disabled)
+        .vf-input-group__details
+          &:after
+            transform: scaleX(1)
+
+  // Required
+  &--required
+    label:after
+      content: '*'
+
+  // Error
+  &.vf-input-group--error
+    label
+      animation: shake .6s $transition.swing
+
+    .vf-input-group__messages
+      color: inherit
+
+    .vf-input-group__details
+      &:before
+        background-color: currentColor
+
+/** Details */
+.vf-input-group
+  .vf-slide-y-transition-leave,
+  .vf-slide-y-transition-leave-to
+    position: absolute
+
+  &__details
+    color: inherit
+    display: flex
+    padding-top: 4px
+    flex: 1 0 100%
+    font-size: 12px
+    min-height: 26px
+    overflow: hidden
+    position: relative
+    width: 100%
+
+    &:after, &:before
+      content: ''
+      position: absolute
+      left: 0
+      transition: .3s $transition.fast-out-slow-in
+
+    &:after
+      background-color: currentColor
+      color: inherit
+      top: 0
+      height: 2px
+      transform: scaleX(0)
+      transform-origin: center center 0
+      width: 100%
+      z-index: 1
+
+    &:before
+      top: 0
+      height: 1px
+      width: 100%
+      z-index: 0
+
+  &--hide-details
+    .vf-input-group__details
+      min-height: 2px
+      padding: 0
+
+  &--async-loading
+    .vf-input-group__details
+      &:before,
+      &:after
+        display: none
+
+  /** Async loading indicator */
+  .vf-progress-linear
+    position: absolute
+    top: 0
+    left: 0
+    margin: 0
+
+/** Hint */
+.vf-input-group
+  &__hint
+    // flex: 1 0
+    transition: .3s $transition.fast-in-fast-out
+
+/** Error */
+.vf-input-group
+  .vf-input-group__error
+    color: inherit
+    flex: 1 0
+    transition: .3s $transition.fast-in-fast-out
+
+/** Types */
+.vf-input-group
+  &--overflow,
+  &--segmented,
+  &--editable
+    &.vf-input-group--active
+      background-color: #fff

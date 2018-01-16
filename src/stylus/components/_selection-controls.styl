@@ -1,0 +1,118 @@
+@import '../bootstrap'
+@import '../theme'
+
+/** Theme */
+selection-control($material)
+  label
+    color: $material.text.primary
+
+  .vf-icon--selection-control
+    color: $material.text.secondary
+
+  &.vf-input-group--active
+    .vf-icon--selection-control
+      color: inherit
+
+  &.vf-input-group--disabled
+    .vf-input-group__input
+      color: $material.text.disabled
+
+      .vf-icon--radio,
+      .vf-icon--checkbox
+        color: inherit
+
+theme(selection-control, "vf-input-group--selection-controls")
+
+.vf-input-group--selection-controls.vf-input-group--tab-focused,
+.vf-input-group--tab-focused .vf-input-group:focus
+  .vf-input-group--selection-controls__ripple
+    &:before
+      transform: translate(-50%, -50%) scale(1)
+      opacity: $ripple-animation-visible-opacity
+
+/** Input */
+.vf-input-group.input-group--selection-controls
+  display: flex
+  padding: 0
+
+  .vf-icon--selection-control
+    cursor: pointer
+    position: absolute
+    left: 0
+    user-select: none
+    transition: .3s $transition.ease-in-out
+
+  .vf-input-group__details:before, .vf-input-group__details:after
+    display: none
+
+  .vf-input-group__input
+    color: inherit
+    width: 100%
+    position: relative
+
+    // Needed for safari
+    .vf-icon--selection-control
+      align-self: center
+      height: 30px
+      margin: auto
+
+  &.vf-input-group--error
+    label
+      color: inherit
+
+    .vf-input-group__input
+      .vf-icon--selection-control
+        color: inherit
+
+/** Label */
+.vf-input-group.vf-input-group--selection-controls label
+  cursor: pointer
+  position: absolute
+  left: 32px
+  user-select: none
+  z-index: 1
+  pointer-events: all
+
+.vf-input-group--selection-controls__ripple
+  border-radius: 50%
+  height: 48px
+  width: 48px
+  cursor: pointer
+  position: absolute
+  transform: translate(-12px, -50%)
+  transform-origin: center center
+  top: 50%
+  left: 0
+
+  &:before
+    content: ''
+    position: absolute
+    width: 36px
+    height: 36px
+    background: currentColor
+    border-radius: 50%
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) scale(.3)
+    opacity: 0
+    transition: $ripple-animation-transition
+    transform-origin: center center
+
+/** Appended and prepended icons */
+.vf-input-group--prepend-icon
+  &.vf-input-group--selection-controls
+    .vf-icon--selection-control,
+    .vf-input-group--selection-controls__ripple
+      left: 38px
+
+    label
+      left: 76px
+
+.vf-input-group--prepend-icon
+  &.vf-radio-group--row
+    .vf-icon--selection-control,
+    .vf-input-group--selection-controls__ripple
+      left: 14px
+
+    label
+      left: 52px

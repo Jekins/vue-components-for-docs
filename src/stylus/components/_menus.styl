@@ -1,0 +1,87 @@
+@import '../bootstrap'
+
+.vf-menu
+  display: inline-block
+  position: relative
+  vertical-align: middle
+
+  &--disabled
+    cursor: default
+
+    .vf-menu__activator,
+    .vf-menu__activator > *
+      cursor: default
+      pointer-events: none
+
+  &__activator
+    align-items: center
+    cursor: pointer
+    position: relative
+
+    input[readonly]
+      cursor: pointer
+
+    .vf-toolbar__side-icon
+      margin: 0
+
+  &__content
+    position: absolute
+    display: inline-block
+    border-radius: 2px
+    max-width: 80%
+    overflow-y: auto
+    overflow-x: hidden
+    transition: .3s $transition.swing
+    contain: content
+    elevation(8)
+
+    &--active
+      pointer-events: none
+
+    &--dropdown
+      border-top-left-radius: 0
+      border-top-right-radius: 0
+      border-top: 1px solid $material-light.dividers
+
+    & > .vf-card
+      contain: content
+      backface-visibility: hidden
+
+  &-transition
+    &-enter
+      .vf-list__tile
+        min-width: 0
+        transition-delay: .4s
+        opacity: 0
+        transform: translateY(-15px)
+        pointer-events: none
+
+    &-enter-to
+      .vf-list__tile
+        pointer-events: auto
+        opacity: 1
+
+      .vf-list__tile--active
+        transform: none !important
+
+    &-leave-to
+      transform: translateY(-10px)
+
+    &-leave-active, &-leave-to
+      pointer-events: none
+
+    &-enter, &-leave-to
+      opacity: 0
+
+    &-enter-to, &-leave
+      opacity: 1
+
+    &-enter-active, &-leave-active
+      transition: all .5s $transition.swing
+
+.vf-menu-transition-enter
+  &.vf-menu__content--auto
+    .vf-list__tile--active
+      opacity: 1
+      transform: none !important
+      pointer-events: auto

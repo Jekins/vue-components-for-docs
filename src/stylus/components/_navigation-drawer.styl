@@ -1,0 +1,130 @@
+@import '../bootstrap'
+@import '../theme'
+
+navigation-drawer($material)
+  background-color: $material.cards
+
+  &:not(.vf-navigation-drawer--floating)
+    .vf-navigation-drawer__border
+      background-color: $material.dividers
+
+  a:not(.vf-list__tile--active),
+  .vf-list
+    color: $material.text.primary
+
+  .vf-divider
+    background-color: $material.dividers
+
+  .vf-list
+    &__tile:not(.vf-list__tile--active)
+      color: $material.text.primary
+
+      .vf-icon
+        color: $material.icons.active
+
+    &__tile__sub-title
+      color: $material.text.secondary
+
+  .vf-list--group__header--active
+    .vf-list__tile, + .vf-list--group
+      &:after
+        background: $material.dividers
+
+theme(navigation-drawer, "vf-navigation-drawer")
+
+.vf-navigation-drawer
+  max-width: 100%
+  overflow-y: auto
+  overflow-x: hidden
+  -webkit-overflow-scrolling: touch
+  padding: 0 0 100px
+  pointer-events: auto
+  transition: .2s $transition.fast-out-slow-in
+  top: 0
+  left: 0
+  will-change: transform
+  z-index: 3
+
+  &__border
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    width: 1px
+
+  &.vf-navigation-drawer--right
+    &:after
+      left: 0
+      right: initial
+
+  &--close
+    &.vf-navigation-drawer:not(.vf-navigation-drawer--right)
+      transform: translateX(-100%)
+
+    &.vf-navigation-drawer--right
+      transform: translateX(100%)
+
+  &--right
+    left: auto
+    right: 0
+
+    > .vf-navigation-drawer__border
+      right: auto
+      left: 0
+
+  &--absolute
+    position: absolute
+
+  &--fixed
+    position: fixed
+
+  &--floating:after
+    display: none
+
+  &--mini-variant
+    overflow: hidden
+
+    .vf-list__tile__action,
+    .vf-list__tile__avatar
+      justify-content: center
+      min-width: 48px
+
+    .vf-list__tile__content,
+    .vf-list__tile:after
+      opacity: 0
+
+    .vf-subheader,
+    .vf-divider,
+    .vf-list--group
+      display: none !important
+
+  &--temporary,
+  &--is-mobile
+    z-index: 6
+
+    &:not(.vf-navigation-drawer--close)
+      elevation(16)
+
+  .vf-list
+    background: inherit
+
+  > .vf-list
+    .vf-list__tile
+      transition: none
+      font-weight: $navigation-drawer-item-font-weight
+
+      &--active
+        .vf-list__tile__title
+          color: inherit
+
+    .vf-list--group
+      .vf-list__tile
+        font-weight: $navigation-drawer-group-item-font-weight
+
+      &__header--active
+        &:after
+          background: transparent
+
+  > .vf-list:not(.vf-list--dense)
+    .vf-list__tile
+      font-size: $navigation-drawer-item-font-size

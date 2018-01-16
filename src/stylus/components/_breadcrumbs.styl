@@ -1,0 +1,50 @@
+﻿@import '../bootstrap'
+@import '../theme'
+
+breadcrumbs($material)
+  li.vf-breadcrumbs__divider,
+  li:last-child .vf-breadcrumbs__item,
+  li .vf-breadcrumbs__item--disabled
+    color: $material.text.disabled
+
+theme(breadcrumbs, "vf-breadcrumbs")
+
+.vf-breadcrumbs
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  flex: $breadcrumbs-flex
+  list-style-type: none
+  margin: $breadcrumbs-margin
+  padding: $breadcrumbs-padding
+
+  li
+    align-items: center
+    display: inline-flex
+    font-size: $breadcrumbs-item-font-size
+
+    .vf-icon
+      font-size: $breadcrumbs-item-large-font-size
+
+    &:last-child a
+      cursor: default
+      pointer-events: none
+      
+    &:nth-child(even)
+      padding: $breadcrumbs-even-child-padding
+
+  &--large
+    li
+      font-size: $breadcrumbs-item-large-font-size
+      
+      .vf-icon
+        font-size: $breadcrumbs-item-large-font-size
+
+  &__item
+    align-items: center
+    display: inline-flex
+    text-decoration: none
+    transition: $primary-transition
+
+    &--disabled
+      pointer-events: none

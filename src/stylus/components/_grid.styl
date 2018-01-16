@@ -1,0 +1,171 @@
+@import '../bootstrap'
+
+.vf-container
+  flex: 1 1 100%
+  margin: auto
+  padding: $grid-gutters.lg
+  width: 100%
+
+  for size, width in $container-max-widths
+    @media only screen and (min-width: width)
+      max-width: (width * 0.9375) // Credit to bootstrap
+
+  @media $display-breakpoints.xs-only
+    padding: $grid-gutters.xl
+
+  &.vf-fluid
+    max-width: 100%
+    
+  &.vf-fill-height
+    align-items: center
+    display: flex
+    
+    .vf-layout
+      height: 100%
+      flex: 1 1 auto
+
+  &.vf-grid-list
+    for $size, $gutter in $grid-gutters
+      &-{$size}
+        padding: $gutter
+
+        .vf-layout
+          .vf-flex
+            padding: ($gutter / 2)
+            
+        .vf-layout:only-child
+          margin: -($gutter / 2)
+
+        .vf-layout:not(:only-child)
+          margin: auto -($gutter / 2)
+        
+        *:not(:only-child)
+          .vf-layout:first-child
+            margin-top: -($gutter / 2)
+
+          .vf-layout:last-child
+            margin-bottom: -($gutter / 2)
+
+.vf-layout
+  display: flex
+  flex: 1 1 auto
+  flex-wrap: nowrap
+
+  &.vf-row
+    flex-direction: row
+
+    &.vf-reverse
+      flex-direction: row-reverse
+
+  &.vf-column
+    flex-direction: column
+
+    &.vf-reverse
+      flex-direction: column-reverse
+
+  &.vf-wrap
+    flex-wrap: wrap
+
+for size, width in $grid-breakpoints
+  @media all and (min-width: width)
+    for n in (1..$grid-columns)
+      .vf-flex.{size}{n}
+        flex-basis: (n / $grid-columns * 100)%
+        max-width: (n / $grid-columns * 100)%
+
+      .vf-flex.vf-order-{size}{n}
+        order: n
+
+    for n in (0..$grid-columns)
+      .vf-flex.vf-offset-{size}{n}
+        margin-left: (n / $grid-columns * 100)%
+
+.vf-flex,
+.vf-child-flex > *
+  flex: 1 1 auto
+
+.vf-align
+  &-start
+    align-items: flex-start
+
+  &-end
+    align-items: flex-end
+
+  &-center
+    align-items: center
+
+  &-baseline
+    align-items: baseline
+    
+.vf-align-content
+  &-start
+    align-content: flex-start
+
+  &-end
+    align-content: flex-end
+
+  &-center
+    align-content: center
+
+  &-space-between
+    align-content: space-between
+
+  &-space-around
+    align-content: space-around
+
+.vf-justify
+  &-start
+    justify-content: flex-start
+
+  &-end
+    justify-content: flex-end
+
+  &-center
+    justify-content: center
+
+  &-space-around
+    justify-content: space-around
+
+  &-space-between
+    justify-content: space-between
+
+.vf-spacer
+  flex-grow: 1 !important
+
+.vf-scroll-y
+  overflow-y: auto
+
+.vf-fill-height
+  height: 100%
+
+.vf-hide-overflow
+  overflow: hidden !important
+
+.vf-show-overflow
+  overflow: visible !important
+
+.vf-no-wrap
+  white-space: nowrap
+  
+.vf-ellipsis
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  
+// Display helpers
+.vf-d-flex
+  display: flex
+    
+.vf-d-inline-flex
+  display: inline-flex
+  
+.vf-d-flex,
+.vf-d-inline-flex
+  > *
+    flex: 1 1 auto
+    
+.vf-d-block
+  display: block
+  
+.vf-d-inline-block
+  display: inline-block

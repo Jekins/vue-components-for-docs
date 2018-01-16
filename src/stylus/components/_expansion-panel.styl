@@ -1,0 +1,86 @@
+@import '../bootstrap'
+@import '../theme'
+
+/** Theme */
+expansion-panel($material)
+  .vf-expansion-panel__container
+    border-top: 1px solid rgba($material.fg-color, $material.divider-percent)
+    background-color: $material.cards
+    color: $material.text.primary
+
+    .vf-expansion-panel__header
+      .vf-icon
+        color: $material.icons.active
+
+  &--focusable
+    .vf-expansion-panel__container
+      &:focus
+        background-color: $material.expansion-panels.focus
+
+theme(expansion-panel, "vf-expansion-panel")
+
+.vf-expansion-panel
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  list-style-type: none
+  padding: 0
+  text-align: left
+  width: 100%
+  elevation(1)
+
+  &__container
+    flex: 1 0 100%
+    outline: none
+    transition: .3s $transition.swing
+
+    &:first-child
+      border-top: none !important
+
+    .vf-header__icon
+      margin-left: auto
+      
+      .vf-icon
+        // Edge rendering issue TODO: revisit later
+        transition: none
+
+    &--active
+      > .vf-expansion-panel__header
+        .vf-header__icon .vf-icon
+          transform: rotate(-180deg)
+
+  &__header
+    display: flex
+    cursor: pointer
+    align-items: center
+    position: relative
+    padding: 12px 24px
+
+    > *:not(.vf-header__icon)
+      flex: 1 1 auto
+
+  &__body
+    transition: $primary-transition
+
+    .vf-card
+      border-radius: 0
+      elevation(0)
+
+  &--popout, &--inset
+    elevation(0)
+
+    .vf-expansion-panel__container--active
+      margin: $spacers.three.x
+      elevation(3)
+
+  &--popout, &--inset
+    .vf-expansion-panel__container
+      max-width: 95%
+  
+  &--popout
+    .vf-expansion-panel__container--active
+      max-width: 100%
+
+  &--inset
+    .vf-expansion-panel__container--active
+      max-width: 85%
