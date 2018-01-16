@@ -47,20 +47,20 @@ export default {
   computed: {
     inputGroupClasses () {
       return Object.assign({
-        'input-group': true,
-        'input-group--async-loading': this.loading !== false,
-        'input-group--focused': this.isFocused,
-        'input-group--dirty': this.isDirty,
-        'input-group--tab-focused': this.tabFocused,
-        'input-group--disabled': this.disabled,
-        'input-group--error': this.hasError,
-        'input-group--append-icon': this.appendIcon,
-        'input-group--prepend-icon': this.prependIcon,
-        'input-group--required': this.required,
-        'input-group--hide-details': this.hideDetails,
-        'input-group--placeholder': !!this.placeholder,
-        'theme--dark': this.dark,
-        'theme--light': this.light
+        'vf-input-group': true,
+        'vf-input-group--async-loading': this.loading !== false,
+        'vf-input-group--focused': this.isFocused,
+        'vf-input-group--dirty': this.isDirty,
+        'vf-input-group--tab-focused': this.tabFocused,
+        'vf-input-group--disabled': this.disabled,
+        'vf-input-group--error': this.hasError,
+        'vf-input-group--append-icon': this.appendIcon,
+        'vf-input-group--prepend-icon': this.prependIcon,
+        'vf-input-group--required': this.required,
+        'vf-input-group--hide-details': this.hideDetails,
+        'vf-input-group--placeholder': !!this.placeholder,
+        'vf-theme--dark': this.dark,
+        'vf-theme--light': this.light
       }, this.classes)
     },
     isDirty () {
@@ -95,7 +95,7 @@ export default {
       }
 
       return this.$createElement('transition-group', {
-        'class': 'input-group__messages',
+        'class': 'vf-input-group__messages',
         props: {
           tag: 'div',
           name: 'slide-y-transition'
@@ -104,7 +104,7 @@ export default {
     },
     genHint () {
       return this.$createElement('div', {
-        'class': 'input-group__hint',
+        'class': 'vf-input-group__hint',
         key: this.hint,
         domProps: { innerHTML: this.hint }
       })
@@ -113,7 +113,7 @@ export default {
       return this.$createElement(
         'div',
         {
-          'class': 'input-group__error',
+          'class': 'vf-input-group__error',
           key: error
         },
         error
@@ -128,9 +128,9 @@ export default {
 
       return this.$createElement('v-icon', {
         'class': {
-          [`input-group__${type}-icon`]: true,
-          'input-group__icon-cb': !!callback,
-          'input-group__icon-clearable': shouldClear
+          [`vf-input-group__${type}-icon`]: true,
+          'vf-input-group__icon-cb': !!callback,
+          'vf-input-group__icon-clearable': shouldClear
         },
         props: {
           disabled: this.disabled
@@ -196,7 +196,7 @@ export default {
 
       children.push(
         this.$createElement('div', {
-          'class': 'input-group__input'
+          'class': 'vf-input-group__input'
         }, wrapperChildren)
       )
 
@@ -208,7 +208,7 @@ export default {
 
       children.push(
         this.$createElement('div', {
-          'class': 'input-group__details'
+          'class': 'vf-input-group__details'
         }, detailsChildren)
       )
 

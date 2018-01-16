@@ -56,7 +56,7 @@ export default {
     },
     genSelectionsAndSearch () {
       return this.$createElement('div', {
-        'class': 'input-group__selections',
+        'class': 'vf-input-group__selections',
         style: { 'overflow': 'hidden' },
         ref: 'activator'
       }, [
@@ -87,9 +87,9 @@ export default {
     },
     genSearch () {
       const data = {
-        staticClass: 'input-group--select__autocomplete',
+        staticClass: 'vf-input-group--select__autocomplete',
         'class': {
-          'input-group--select__autocomplete--index': this.selectedIndex > -1
+          'vf-input-group--select__autocomplete--index': this.selectedIndex > -1
         },
         style: {
           flex: this.shouldBreak ? '1 0 100%' : null
@@ -187,7 +187,7 @@ export default {
       }
 
       return this.$createElement('v-chip', {
-        staticClass: 'chip--select-multi',
+        staticClass: 'vf-chip--select-multi',
         attrs: { tabindex: '-1' },
         props: {
           close: this.deletableChips && !isDisabled,
@@ -208,9 +208,9 @@ export default {
     },
     genCommaSelection (item, comma, index) {
       return this.$createElement('div', {
-        staticClass: 'input-group__selections__comma',
+        staticClass: 'vf-input-group__selections__comma',
         'class': {
-          'input-group__selections__comma--active': index === this.selectedIndex
+          'vf-input-group__selections__comma--active': index === this.selectedIndex
         },
         key: JSON.stringify(this.getValue(item)) // Item may be an object
       }, `${this.getText(item)}${comma ? ', ' : ''}`)
@@ -305,7 +305,7 @@ export default {
       if (!this.isMultiple || this.isHidingSelected) return null
 
       const data = {
-        staticClass: 'list__tile__action--select-multi',
+        staticClass: 'vf-list__tile__action--select-multi',
         on: {
           click: e => {
             e.stopPropagation()

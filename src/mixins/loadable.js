@@ -22,7 +22,7 @@ export default {
       return this.$slots.progress || this.$createElement('v-progress-linear', {
         props: {
           color: (this.loading === true || this.loading === '')
-            ? (this.color || 'primary')
+            ? (this.color || 'vf-primary')
             : this.loading,
           height: 2,
           indeterminate: true

@@ -10,22 +10,22 @@ export default {
   computed: {
     classes () {
       const classes = {
-        'input-group--text-field input-group--select': true,
-        'input-group--auto': this.auto,
-        'input-group--overflow': this.overflow,
-        'input-group--segmented': this.segmented,
-        'input-group--editable': this.editable,
-        'input-group--autocomplete': this.isAutocomplete,
-        'input-group--single-line': this.singleLine || this.isDropdown,
-        'input-group--multi-line': this.multiLine,
-        'input-group--chips': this.chips,
-        'input-group--solo': this.solo,
-        'input-group--multiple': this.multiple,
-        'input-group--open': this.menuIsVisible
+        'vf-input-group--text-field vf-input-group--select': true,
+        'vf-input-group--auto': this.auto,
+        'vf-input-group--overflow': this.overflow,
+        'vf-input-group--segmented': this.segmented,
+        'vf-input-group--editable': this.editable,
+        'vf-input-group--autocomplete': this.isAutocomplete,
+        'vf-input-group--single-line': this.singleLine || this.isDropdown,
+        'vf-input-group--multi-line': this.multiLine,
+        'vf-input-group--chips': this.chips,
+        'vf-input-group--solo': this.solo,
+        'vf-input-group--multiple': this.multiple,
+        'vf-input-group--open': this.menuIsVisible
       }
 
       if (this.hasError) {
-        classes['error--text'] = true
+        classes['vf-error--text'] = true
       } else {
         return this.addTextColorClassChecks(classes)
       }
@@ -34,10 +34,10 @@ export default {
     },
     computedContentClass () {
       const children = [
-        'menu__content--select',
-        this.auto ? 'menu__content--auto' : '',
-        this.isDropdown ? 'menu__content--dropdown' : '',
-        this.isAutocomplete ? 'menu__content--autocomplete' : '',
+        'vf-menu__content--select',
+        this.auto ? 'vf-menu__content--auto' : '',
+        this.isDropdown ? 'vf-menu__content--dropdown' : '',
+        this.isAutocomplete ? 'vf-menu__content--autocomplete' : '',
         this.contentClass || ''
       ]
 

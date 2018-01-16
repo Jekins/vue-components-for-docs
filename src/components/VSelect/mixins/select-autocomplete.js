@@ -47,7 +47,7 @@ export default {
     genHighlight (text) {
       if (this.isNotFiltering) return escapeHTML(text)
 
-      return `<span class="list__tile__mask">${escapeHTML(text)}</span>`
+      return `<span class="vf-list__tile__mask">${escapeHTML(text)}</span>`
     },
     getMaskedCharacters (text) {
       const searchValue = (this.searchValue || '').toString().toLowerCase()
