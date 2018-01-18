@@ -30,7 +30,7 @@ export default {
   computed: {
     classes () {
       return {
-        'stepper__content': true
+        'vf-stepper__content': true
       }
     },
     computedTransition () {
@@ -47,7 +47,7 @@ export default {
     },
     wrapperClasses () {
       return {
-        'stepper__wrapper': true
+        'vf-stepper__wrapper': true
       }
     }
   },

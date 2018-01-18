@@ -3,22 +3,22 @@
 
 /** Themes */
 date-picker($material)
-  .picker--time__clock
+  .vf-picker--time__clock
     background: $material.picker.clock
 
-    > span.disabled
+    > span.vf-disabled
       color: $material.buttons.disabled
 
-theme(date-picker, "picker--time")
+theme(date-picker, "vf-picker--time")
 
-.picker--time
-  .card__row--actions
+.vf-picker--time
+  .vf-card__row--actions
     margin-top: -10px
 
-  &.picker--landscape
+  &.vf-picker--landscape
     flex-wrap: wrap
 
-    .picker__title
+    .vf-picker__title
       flex-direction: column
       justify-content: center
 
@@ -34,7 +34,7 @@ theme(date-picker, "picker--time")
         align-self: initial
         text-align: center
 
-    .picker--time__clock
+    .vf-picker--time__clock
       height: 250px
       width: 250px
 
@@ -42,8 +42,8 @@ theme(date-picker, "picker--time")
         height: 97px
 
 /** Title */
-.picker--time
-  .picker__title
+.vf-picker--time
+  .vf-picker__title
     color: #fff
     display: flex
     justify-content: flex-end
@@ -61,7 +61,7 @@ theme(date-picker, "picker--time")
         opacity: .6
         transition: $primary-transition
 
-        &.active
+        &.vf-active
           opacity: 1
 
     div:last-child
@@ -76,14 +76,14 @@ theme(date-picker, "picker--time")
         opacity: .6
         transition: $primary-transition
 
-        &.active
+        &.vf-active
           opacity: 1
 
     div:only-child
       flex-direction: row
 
 /** Clock */
-.picker--time__clock
+.vf-picker--time__clock
   height: 270px
   width: 270px
   border-radius: 100%
@@ -163,13 +163,13 @@ theme(date-picker, "picker--time")
       height: $time-picker-number-font-size * 2.5
       width: $time-picker-number-font-size * 2.5
 
-    &.active
+    &.vf-active
       color: #fff
       cursor: default
       z-index: 2
 
-    &.disabled
+    &.vf-disabled
       pointer-events: none
 
-.picker--time .card__row--actions
+.vf-picker--time .vf-card__row--actions
   border: none

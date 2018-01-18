@@ -42,14 +42,14 @@ export default {
   computed: {
     classes () {
       return this.addBackgroundColorClassChecks({
-        'snack--active': this.isActive,
-        'snack--absolute': this.absolute,
-        'snack--bottom': this.bottom || !this.top,
-        'snack--left': this.left,
-        'snack--multi-line': this.multiLine && !this.vertical,
-        'snack--right': this.right,
-        'snack--top': this.top,
-        'snack--vertical': this.vertical
+        'vf-snack--active': this.isActive,
+        'vf-snack--absolute': this.absolute,
+        'vf-snack--bottom': this.bottom || !this.top,
+        'vf-snack--left': this.left,
+        'vf-snack--multi-line': this.multiLine && !this.vertical,
+        'vf-snack--right': this.right,
+        'vf-snack--top': this.top,
+        'vf-snack--vertical': this.vertical
       })
     },
     computedTransition () {
@@ -84,7 +84,7 @@ export default {
 
     if (this.isActive) {
       children.push(h('div', {
-        staticClass: 'snack__content'
+        staticClass: 'vf-snack__content'
       }, this.$slots.default))
     }
 

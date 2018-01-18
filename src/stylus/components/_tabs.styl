@@ -3,32 +3,32 @@
 
 /* Theme */
 tabs($material)
-  .tabs__li
+  .vf-tabs__li
     color: $material.tabs.active
 
-    &.tabs__item--disabled
+    &.vf-tabs__item--disabled
       color: $material.buttons.disabled
 
-  .tabs__bar
+  .vf-tabs__bar
     background-color: $material.cards
 
     .icon--left,
     .icon--right
       color: $material.icons.inactive
 
-theme(tabs, "tabs__bar")
+theme(tabs, "vf-tabs__bar")
 
-.tabs
+.vf-tabs
   overflow: hidden
   position: relative
   width: 100%
 
-  &--grow .tabs__bar
-    .tabs__li
+  &--grow .vf-tabs__bar
+    .vf-tabs__li
       flex: 1
 
-  &--fixed > .tabs__bar
-    .tabs__li
+  &--fixed > .vf-tabs__bar
+    .vf-tabs__li
       min-width: 160px
       max-width: 264px
       flex: 0 1 160px
@@ -36,31 +36,31 @@ theme(tabs, "tabs__bar")
       @media $display-breakpoints.xs-only
         min-width: 72px
 
-  &--centered .tabs__bar
-    .tabs__container
+  &--centered .vf-tabs__bar
+    .vf-tabs__container
       justify-content: center
 
   &--icons
-    .tabs__bar
+    .vf-tabs__bar
       height: 72px
 
-    .tabs__item
+    .vf-tabs__item
       flex-direction: column
 
-  &.tabs--mobile .tabs__bar
-    .icon--left, .icon--right
+  &.vf-tabs--mobile .vf-tabs__bar
+    .vf-icon--left, .vf-icon--right
       display: none
 
-    .tabs__wrapper
-      &--scrollable.tabs__wrapper--overflow
+    .vf-tabs__wrapper
+      &--scrollable.vf-tabs__wrapper--overflow
         overflow: hidden !important
 
-  &:not(.tabs--grow):not(.tabs--mobile)
-    .tabs__item
+  &:not(.vf-tabs--grow):not(.vf-tabs--mobile)
+    .vf-tabs__item
       padding: 0 24px
 
-  &:not(.tabs--centered):not(.tabs--grow):not(.tabs--mobile)
-    .tabs__wrapper
+  &:not(.vf-tabs--centered):not(.vf-tabs--grow):not(.vf-tabs--mobile)
+    .vf-tabs__wrapper
       &--scrollable
         margin: 0 60px
         overflow: hidden !important
@@ -73,7 +73,7 @@ theme(tabs, "tabs__bar")
     @media $display-breakpoints.sm-and-down
       padding-left: 0
 
-    .icon--left, .icon--right
+    .vf-icon--left, .vf-icon--right
       position: absolute
       top: 0
       width: 32px
@@ -82,10 +82,10 @@ theme(tabs, "tabs__bar")
       cursor: pointer
       user-select: none
 
-    .icon--left
+    .vf-icon--left
       left: 28px
 
-    .icon--right
+    .vf-icon--right
       right: 28px
 
   &__container
@@ -100,7 +100,7 @@ theme(tabs, "tabs__bar")
     will-change: transform
     transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1)
 
-    > li:not(.tabs__slider)
+    > li:not(.vf-tabs__slider)
       height: 100%
 
     &-left
@@ -133,7 +133,7 @@ theme(tabs, "tabs__bar")
     text-overflow: ellipsis
     white-space: nowrap
 
-    .icon
+    .vf-icon
       color: inherit
       margin: 0 0 5px
 
@@ -151,7 +151,7 @@ theme(tabs, "tabs__bar")
     transition: $primary-transition
     width: 100%
 
-    .card
+    .vf-card
       border-radius: 0 0 2px 2px
 
   &__slider

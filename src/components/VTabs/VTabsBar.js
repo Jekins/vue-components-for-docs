@@ -46,9 +46,9 @@ export default {
   computed: {
     classes () {
       return {
-        'tabs__bar': true,
-        'theme--dark': this.dark,
-        'theme--light': this.light
+        'vf-tabs__bar': true,
+        'vf-theme--dark': this.dark,
+        'vf-theme--light': this.light
       }
     },
     containerClasses () {
@@ -58,9 +58,9 @@ export default {
     },
     wrapperClasses () {
       return {
-        'tabs__wrapper': true,
-        'tabs__wrapper--scrollable': this.isScrollable(),
-        'tabs__wrapper--overflow': this.isOverflowing
+        'vf-tabs__wrapper': true,
+        'vf-tabs__wrapper--scrollable': this.isScrollable(),
+        'vf-tabs__wrapper--overflow': this.isOverflowing
       }
     },
     containerStyles () {
@@ -166,7 +166,7 @@ export default {
       let offset = 0
 
       for (let index = currentIndex - 1; index >= 0; index--) {
-        if (!items[index].classList.contains('tabs__slider')) {
+        if (!items[index].classList.contains('vf-tabs__slider')) {
           const newOffset = offset + items[index].clientWidth
           if (newOffset >= container.clientWidth) {
             return { offset: currentOffset - offset, index: index + 1 }
@@ -183,7 +183,7 @@ export default {
       let offset = currentOffset
 
       for (let index = currentIndex; index < items.length; index++) {
-        if (!items[index].classList.contains('tabs__slider')) {
+        if (!items[index].classList.contains('vf-tabs__slider')) {
           const newOffset = offset + items[index].clientWidth
           if (newOffset > currentOffset + container.clientWidth) {
             return { offset, index }

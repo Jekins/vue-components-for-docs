@@ -30,14 +30,14 @@ export default {
   computed: {
     classes () {
       return {
-        'speed-dial': true,
-        'speed-dial--top': this.top,
-        'speed-dial--right': this.right,
-        'speed-dial--bottom': this.bottom,
-        'speed-dial--left': this.left,
-        'speed-dial--absolute': this.absolute,
-        'speed-dial--fixed': this.fixed,
-        [`speed-dial--direction-${this.direction}`]: true
+        'vf-speed-dial': true,
+        'vf-speed-dial--top': this.top,
+        'vf-speed-dial--right': this.right,
+        'vf-speed-dial--bottom': this.bottom,
+        'vf-speed-dial--left': this.left,
+        'vf-speed-dial--absolute': this.absolute,
+        'vf-speed-dial--fixed': this.fixed,
+        [`vf-speed-dial--direction-${this.direction}`]: true
       }
     }
   },
@@ -68,7 +68,7 @@ export default {
     }
 
     const list = h('transition-group', {
-      'class': 'speed-dial__list',
+      'class': 'vf-speed-dial__list',
       props: {
         name: this.transition,
         tag: 'div'

@@ -32,7 +32,7 @@ export default {
   ],
 
   data: () => ({
-    defaultColor: 'accent',
+    defaultColor: 'vf-accent',
     isActive: false,
     parentError: false
   }),

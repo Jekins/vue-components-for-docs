@@ -30,25 +30,25 @@ export default {
         clearTimeout(this.overlayTimeout)
 
         return this.overlay &&
-          this.overlay.classList.add('overlay--active')
+          this.overlay.classList.add('vf-overlay--active')
       }
 
       this.overlay = document.createElement('div')
       this.overlay.className = 'overlay'
 
-      if (this.absolute) this.overlay.className += ' overlay--absolute'
+      if (this.absolute) this.overlay.className += ' vf-overlay--absolute'
 
       this.hideScroll()
 
       const parent = this.absolute
         ? this.$el.parentNode
-        : document.querySelector('[data-app]')
+        : document.querySelector('[data-app-vf]')
 
       parent && parent.insertBefore(this.overlay, parent.firstChild)
 
       this.overlay.clientHeight // Force repaint
       requestAnimationFrame(() => {
-        this.overlay.className += ' overlay--active'
+        this.overlay.className += ' vf-overlay--active'
 
         if (this.activeZIndex !== undefined) {
           this.overlay.style.zIndex = this.activeZIndex - 1
@@ -62,7 +62,7 @@ export default {
         return this.showScroll()
       }
 
-      this.overlay.classList.remove('overlay--active')
+      this.overlay.classList.remove('vf-overlay--active')
 
       this.overlayTimeout = setTimeout(() => {
         // IE11 Fix

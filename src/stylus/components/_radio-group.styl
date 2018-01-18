@@ -2,28 +2,28 @@
 @import '../theme'
 
 radiogroup($material)
-  .input-group--selection-controls
+  .vf-input-group--selection-controls
     //
 
-theme(radiogroup, "radio-group")
+theme(radiogroup, "vf-radio-group")
 
-.radio-group
-  .input-group__details:before, .input-group__details:after
+.vf-radio-group
+  .vf-input-group__details:before, .vf-input-group__details:after
     display: none
 
-  .input-group
+  .vf-input-group
     padding: 0
 
   &--column
-    .input-group__input
+    .vf-input-group__input
       display: block
 
   &--row
-    .input-group__input
+    .vf-input-group__input
       flex-direction: row
 
-  &.input-group--error
-    .radio
+  &.vf-input-group--error
+    .vf-radio
       label,
-      .icon--selection-control
+      .vf-icon--selection-control
         color: inherit

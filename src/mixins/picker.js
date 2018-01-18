@@ -6,7 +6,7 @@ export default {
 
   data () {
     return {
-      defaultColor: 'accent',
+      defaultColor: 'vf-accent',
       isSaving: false
     }
   },
@@ -26,7 +26,7 @@ export default {
   computed: {
     titleColor () {
       const darkTheme = this.dark || (!this.light && this.$vuetify.dark)
-      const defaultTitleColor = darkTheme ? null : 'primary'
+      const defaultTitleColor = darkTheme ? null : 'vf-primary'
       return this.headerColor || this.color || defaultTitleColor
     }
   },
@@ -42,7 +42,7 @@ export default {
     },
     genPickerTitle (children) {
       return this.$createElement('div', {
-        staticClass: 'picker__title',
+        staticClass: 'vf-picker__title',
         'class': this.addBackgroundColorClassChecks({}, 'titleColor')
       }, children)
     }

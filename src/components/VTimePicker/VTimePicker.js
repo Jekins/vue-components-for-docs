@@ -277,9 +277,9 @@ export default {
 
     return h('v-card', {
       'class': {
-        'picker picker--time': true,
-        'picker--landscape': this.landscape,
-        'picker--time--hours': this.selectingHour,
+        'vf-picker vf-picker--time': true,
+        'vf-picker--landscape': this.landscape,
+        'vf-picker--time--hours': this.selectingHour,
         ...this.themeClasses
       }
     }, children)

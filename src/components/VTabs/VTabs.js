@@ -59,13 +59,13 @@ export default {
   computed: {
     classes () {
       return {
-        'tabs': true,
-        'tabs--centered': this.centered,
-        'tabs--fixed': this.fixed,
-        'tabs--grow': this.grow,
-        'tabs--icons': this.icons,
-        'tabs--mobile': this.isMobile,
-        'tabs--scroll-bars': this.scrollable
+        'vf-tabs': true,
+        'vf-tabs--centered': this.centered,
+        'vf-tabs--fixed': this.fixed,
+        'vf-tabs--grow': this.grow,
+        'vf-tabs--icons': this.icons,
+        'vf-tabs--mobile': this.isMobile,
+        'vf-tabs--scroll-bars': this.scrollable
       }
     },
     isMobile () {
@@ -110,7 +110,7 @@ export default {
     // This is a workaround to detect if link is active
     // when being used as a router or nuxt link
     const i = this.tabItems.findIndex(({ el }) => {
-      return el.firstChild.classList.contains('tabs__item--active')
+      return el.firstChild.classList.contains('vf-tabs__item--active')
     })
 
     const tab = this.value || (this.tabItems[i !== -1 ? i : 0] || {}).id
@@ -167,10 +167,10 @@ export default {
     },
     slider (el) {
       this.tabsSlider = this.tabsSlider ||
-        !!this.$el && this.$el.querySelector('.tabs__slider')
+        !!this.$el && this.$el.querySelector('.vf-tabs__slider')
 
       this.tabsContainer = this.tabsContainer ||
-        !!this.$el && this.$el.querySelector('.tabs__container')
+        !!this.$el && this.$el.querySelector('.vf-tabs__container')
 
       if (!this.tabsSlider || !this.tabsContainer) return
 

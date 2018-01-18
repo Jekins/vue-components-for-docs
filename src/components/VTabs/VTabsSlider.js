@@ -6,12 +6,12 @@ export default {
   mixins: [Colorable],
 
   data: () => ({
-    defaultColor: 'accent'
+    defaultColor: 'vf-accent'
   }),
 
   render (h) {
     return h('li', {
-      staticClass: 'tabs__slider',
+      staticClass: 'vf-tabs__slider',
       class: this.addBackgroundColorClassChecks()
     })
   }

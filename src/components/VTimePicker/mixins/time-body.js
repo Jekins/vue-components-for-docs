@@ -8,7 +8,7 @@ export default {
     genBody () {
       const children = [this.genHand(this.selectingHour ? 'hour' : 'minute')]
       const data = {
-        'class': 'picker--time__clock',
+        'class': 'vf-picker--time__clock',
         on: {
           mousedown: this.onMouseDown,
           mouseup: this.onMouseUp,
@@ -40,7 +40,7 @@ export default {
       }
 
       return this.$createElement('div', {
-        'class': 'picker__body'
+        'class': 'vf-picker__body'
       }, [
         this.$createElement('transition', {
           props: {
@@ -55,7 +55,7 @@ export default {
     genHand (type) {
       const scale = this.is24hrAfter12 ? 'scaleY(0.6)' : ''
       return [this.$createElement('div', {
-        staticClass: 'picker--time__clock-hand',
+        staticClass: 'vf-picker--time__clock-hand',
         'class': this.addBackgroundColorClassChecks({
           [type]: true
         }),
@@ -76,8 +76,8 @@ export default {
 
       for (let i = start; i < hours; i++) {
         const classes = {
-          'active': i === this.hour,
-          'disabled': !this.isAllowed('hour', i)
+          'vf-active': i === this.hour,
+          'vf-disabled': !this.isAllowed('hour', i)
         }
         children.push(this.$createElement('span', {
           'class': this.addBackgroundColorClassChecks(classes, i === this.hour ? 'computedColor' : null),
@@ -98,8 +98,8 @@ export default {
         if (num === 60) num = '00'
 
         const classes = {
-          'active': num.toString() === this.minute.toString(),
-          'disabled': !this.isAllowed('minute', i)
+          'vf-active': num.toString() === this.minute.toString(),
+          'vf-disabled': !this.isAllowed('minute', i)
         }
         children.push(this.$createElement('span', {
           'class': this.addBackgroundColorClassChecks(classes, num.toString() === this.minute.toString() ? 'computedColor' : null),

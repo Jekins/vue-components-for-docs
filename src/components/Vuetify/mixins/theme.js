@@ -1,11 +1,11 @@
 const THEME_DEFAULTS = {
-  primary: '#1976D2',
-  secondary: '#424242',
-  accent: '#82B1FF',
-  error: '#FF5252',
-  info: '#2196F3',
-  success: '#4CAF50',
-  warning: '#FFC107'
+  'vf-primary': '#1976D2',
+  'vf-secondary': '#424242',
+  'vf-accent': '#82B1FF',
+  'vf-error': '#FF5252',
+  'vf-info': '#2196F3',
+  'vf-success': '#4CAF50',
+  'vf-warning': '#FFC107'
 }
 
 export default function theme (theme) {

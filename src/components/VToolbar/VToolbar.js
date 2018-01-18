@@ -69,18 +69,18 @@ export default {
     },
     classes () {
       return this.addBackgroundColorClassChecks({
-        'toolbar': true,
-        'elevation-0': this.flat,
-        'toolbar--absolute': this.absolute,
-        'toolbar--card': this.card,
-        'toolbar--clipped': this.clippedLeft || this.clippedRight,
-        'toolbar--dense': this.dense,
-        'toolbar--fixed': this.fixed,
-        'toolbar--floating': this.floating,
-        'toolbar--prominent': this.prominent,
-        'toolbar--extended': this.isExtended,
-        'theme--dark': this.dark,
-        'theme--light': this.light
+        'vf-toolbar': true,
+        'vf-elevation-0': this.flat,
+        'vf-toolbar--absolute': this.absolute,
+        'vf-toolbar--card': this.card,
+        'vf-toolbar--clipped': this.clippedLeft || this.clippedRight,
+        'vf-toolbar--dense': this.dense,
+        'vf-toolbar--fixed': this.fixed,
+        'vf-toolbar--floating': this.floating,
+        'vf-toolbar--prominent': this.prominent,
+        'vf-toolbar--extended': this.isExtended,
+        'vf-theme--dark': this.dark,
+        'vf-theme--light': this.light
       })
     },
     isScrolling: {
@@ -201,14 +201,14 @@ export default {
     }
 
     children.push(h('div', {
-      staticClass: 'toolbar__content',
+      staticClass: 'vf-toolbar__content',
       style: { height: `${this.computedHeight}px` },
       ref: 'content'
     }, this.$slots.default))
 
     if (this.isExtended) {
       children.push(h('div', {
-        staticClass: 'toolbar__extension',
+        staticClass: 'vf-toolbar__extension',
         style: { height: `${this.computedHeight}px` }
       }, this.$slots.extension))
     }

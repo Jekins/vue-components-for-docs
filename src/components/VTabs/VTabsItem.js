@@ -16,15 +16,15 @@ export default {
   props: {
     activeClass: {
       type: String,
-      default: 'tabs__item--active'
+      default: 'vf-tabs__item--active'
     }
   },
 
   computed: {
     classes () {
       const classes = {
-        'tabs__item': true,
-        'tabs__item--disabled': this.disabled
+        'vf-tabs__item': true,
+        'vf-tabs__item--disabled': this.disabled
       }
 
       classes[this.activeClass] = !this.to && this.isActive
@@ -58,7 +58,7 @@ export default {
   methods: {
     callSlider () {
       setTimeout(() => {
-        this.$el.firstChild.classList.contains('tabs__item--active') &&
+        this.$el.firstChild.classList.contains('vf-tabs__item--active') &&
         this.slider(this.$el)
       }, 0)
     },
@@ -93,7 +93,7 @@ export default {
     const tag = this.disabled ? 'div' : link.tag
 
     return h('li', {
-      'class': 'tabs__li'
+      'class': 'vf-tabs__li'
     }, [h(tag, data, this.$slots.default)])
   }
 }

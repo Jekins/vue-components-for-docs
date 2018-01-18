@@ -17,7 +17,7 @@ export default {
       }
 
       return this.$createElement('div', {
-        'class': 'picker--time__title'
+        'class': 'vf-picker--time__title'
       }, [
         this.$createElement('span', {
           'class': { active: this.selectingHour },

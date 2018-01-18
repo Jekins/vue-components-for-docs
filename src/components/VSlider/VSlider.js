@@ -17,7 +17,7 @@ export default {
   data () {
     return {
       app: {},
-      defaultColor: 'primary',
+      defaultColor: 'vf-primary',
       isActive: false,
       keyPressed: 0
     }
@@ -52,11 +52,11 @@ export default {
   computed: {
     classes () {
       return {
-        'input-group--slider': true,
-        'input-group--active': this.isActive,
-        'input-group--dirty': this.inputWidth > 0,
-        'input-group--disabled': this.disabled,
-        'input-group--ticks': !this.disabled && this.stepNumeric && this.ticks
+        'vf-input-group--slider': true,
+        'vf-input-group--active': this.isActive,
+        'vf-input-group--dirty': this.inputWidth > 0,
+        'vf-input-group--disabled': this.disabled,
+        'vf-input-group--ticks': !this.disabled && this.stepNumeric && this.ticks
       }
     },
     computedColor () {
@@ -149,7 +149,7 @@ export default {
     this.inputValue = this.value
 
     // Without a v-app, iOS does not work with body selectors
-    this.app = document.querySelector('[data-app]') ||
+    this.app = document.querySelector('[data-app-vf]') ||
       console.warn('The v-slider component requires the presence of v-app or a non-body wrapping element with the [data-app] attribute.')
   },
 
@@ -225,7 +225,7 @@ export default {
         props: { origin: 'bottom center' }
       }, [
         h('div', {
-          staticClass: 'slider__thumb--label__container',
+          staticClass: 'vf-slider__thumb--label__container',
           directives: [
             {
               name: 'show',
@@ -234,7 +234,7 @@ export default {
           ]
         }, [
           h('div', {
-            staticClass: 'slider__thumb--label',
+            staticClass: 'vf-slider__thumb--label',
             'class': this.addBackgroundColorClassChecks({}, 'computedThumbColor')
           }, [
             h('span', {}, this.inputValue)
@@ -256,16 +256,16 @@ export default {
     genThumbContainer (h) {
       const children = []
       children.push(h('div', {
-        staticClass: 'slider__thumb',
+        staticClass: 'vf-slider__thumb',
         'class': this.addBackgroundColorClassChecks({}, 'computedThumbColor')
       }))
 
       this.thumbLabel && children.push(this.genThumbLabel(h))
 
       return h('div', {
-        staticClass: 'slider__thumb-container',
+        staticClass: 'vf-slider__thumb-container',
         'class': {
-          'slider__thumb-container--label': this.thumbLabel
+          'vf-slider__thumb-container--label': this.thumbLabel
         },
         style: this.thumbStyles,
         on: {
@@ -278,7 +278,7 @@ export default {
     genSteps (h) {
       const ticks = createRange(this.numTicks + 1).map((i) => {
         const span = h('span', {
-          staticClass: 'slider__tick',
+          staticClass: 'vf-slider__tick',
           style: {
             left: `${i * (100 / this.numTicks)}%`
           }
@@ -288,26 +288,26 @@ export default {
       })
 
       return h('div', {
-        staticClass: 'slider__ticks-container',
+        staticClass: 'vf-slider__ticks-container',
         style: this.tickContainerStyles
       }, ticks)
     },
     genTrackContainer (h) {
       const children = [
         h('div', {
-          staticClass: 'slider__track',
+          staticClass: 'vf-slider__track',
           'class': this.addBackgroundColorClassChecks({}, 'computedTrackColor'),
           style: this.trackStyles
         }),
         h('div', {
-          staticClass: 'slider__track-fill',
+          staticClass: 'vf-slider__track-fill',
           'class': this.addBackgroundColorClassChecks(),
           style: this.trackFillStyles
         })
       ]
 
       return h('div', {
-        staticClass: 'slider__track__container',
+        staticClass: 'vf-slider__track__container',
         ref: 'track'
       }, children)
     }
@@ -321,7 +321,7 @@ export default {
     children.push(this.genThumbContainer(h))
 
     const slider = h('div', {
-      staticClass: 'slider'
+      staticClass: 'vf-slider'
     }, children)
 
     return this.genInputGroup([slider], {

@@ -1,7 +1,7 @@
 @import './settings/_theme.styl'
 
 app($component)
-  .application
+  .vf-application
     &.theme--light
       $component($material-light)
     &.theme--dark
@@ -13,10 +13,10 @@ theme($component, $name)
 
 light($component, $name)
   .theme--light .{$name},
-  .application .theme--light.{$name}
+  .vf-application .theme--light.{$name}
     $component($material-light)
 
 dark($component, $name)
   .theme--dark .{$name},
-  .application .theme--dark.{$name}
+  .vf-application .theme--dark.{$name}
     $component($material-dark)

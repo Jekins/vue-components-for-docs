@@ -30,7 +30,7 @@ export default {
     clearable: Boolean,
     color: {
       type: String,
-      default: 'primary'
+      default: 'vf-primary'
     },
     counter: [Boolean, Number, String],
     fullWidth: Boolean,
@@ -53,19 +53,19 @@ export default {
   computed: {
     classes () {
       const classes = {
-        'input-group--text-field': true,
-        'input-group--text-field-box': this.box,
-        'input-group--single-line': this.singleLine || this.solo,
-        'input-group--solo': this.solo,
-        'input-group--multi-line': this.multiLine,
-        'input-group--full-width': this.fullWidth,
-        'input-group--prefix': this.prefix,
-        'input-group--suffix': this.suffix,
-        'input-group--textarea': this.textarea
+        'vf-input-group--text-field': true,
+        'vf-input-group--text-field-box': this.box,
+        'vf-input-group--single-line': this.singleLine || this.solo,
+        'vf-input-group--solo': this.solo,
+        'vf-input-group--multi-line': this.multiLine,
+        'vf-input-group--full-width': this.fullWidth,
+        'vf-input-group--prefix': this.prefix,
+        'vf-input-group--suffix': this.suffix,
+        'vf-input-group--textarea': this.textarea
       }
 
       if (this.hasError) {
-        classes['error--text'] = true
+        classes['vf-error--text'] = true
       } else {
         return this.addTextColorClassChecks(classes)
       }
@@ -196,8 +196,8 @@ export default {
     genCounter () {
       return this.$createElement('div', {
         'class': {
-          'input-group__counter': true,
-          'input-group__counter--error': this.hasError
+          'vf-input-group__counter': true,
+          'vf-input-group__counter--error': this.hasError
         }
       }, this.count)
     },
@@ -254,7 +254,7 @@ export default {
     },
     genFix (type) {
       return this.$createElement('span', {
-        'class': `input-group--text-field__${type}`
+        'class': `vf-input-group--text-field__${type}`
       }, this[type])
     },
     clearableCallback () {

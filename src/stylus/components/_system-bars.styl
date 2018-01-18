@@ -6,22 +6,22 @@ system-bar($material)
   background-color: $material.status-bar.regular
   color: $material.text.secondary
 
-  .icon
+  .vf-icon
     color: $material.text.secondary
 
   &--lights-out
     background-color: $material.status-bar.lights-out !important
 
-theme(system-bar, "system-bar")
+theme(system-bar, "vf-system-bar")
 
-.system-bar
+.vf-system-bar
   align-items: center
   display: flex
   font-size: $headings.body-2.size
   font-weight: $headings.body-2.weight
   padding: 0 8px
 
-  .icon
+  .vf-icon
     font-size: $headings.subheading.size
 
   &--fixed, &--absolute
@@ -37,10 +37,10 @@ theme(system-bar, "system-bar")
     position: absolute
 
   &--status
-    .icon
+    .vf-icon
       margin-right: 4px
 
   &--window
-    .icon
+    .vf-icon
       font-size: $headings.h6.size
       margin-right: 8px

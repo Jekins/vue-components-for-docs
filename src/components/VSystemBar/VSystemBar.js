@@ -20,11 +20,11 @@ export default {
   computed: {
     classes () {
       return this.addBackgroundColorClassChecks(Object.assign({
-        'system-bar--lights-out': this.lightsOut,
-        'system-bar--absolute': this.absolute,
-        'system-bar--fixed': this.fixed,
-        'system-bar--status': this.status,
-        'system-bar--window': this.window
+        'vf-system-bar--lights-out': this.lightsOut,
+        'vf-system-bar--absolute': this.absolute,
+        'vf-system-bar--fixed': this.fixed,
+        'vf-system-bar--status': this.status,
+        'vf-system-bar--window': this.window
       }, this.themeClasses))
     },
     computedHeight () {
@@ -58,7 +58,7 @@ export default {
 
   render (h) {
     const data = {
-      staticClass: 'system-bar',
+      staticClass: 'vf-system-bar',
       'class': this.classes,
       style: {
         height: `${this.computedHeight}px`

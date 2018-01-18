@@ -19,11 +19,11 @@ export default {
   computed: {
     classes () {
       const classes = {
-        'input-group--selection-controls switch': true
+        'vf-input-group--selection-controls switch': true
       }
 
       if (this.hasError) {
-        classes['error--text'] = true
+        classes['vf-error--text'] = true
       } else {
         return this.addTextColorClassChecks(classes)
       }
@@ -32,21 +32,21 @@ export default {
     },
     rippleClasses () {
       return {
-        'input-group--selection-controls__ripple': true,
-        'input-group--selection-controls__ripple--active': this.isActive
+        'vf-input-group--selection-controls__ripple': true,
+        'vf-input-group--selection-controls__ripple--active': this.isActive
       }
     },
     containerClasses () {
       return {
-        'input-group--selection-controls__container': true,
-        'input-group--selection-controls__container--light': this.light,
-        'input-group--selection-controls__container--disabled': this.disabled
+        'vf-input-group--selection-controls__container': true,
+        'vf-input-group--selection-controls__container--light': this.light,
+        'vf-input-group--selection-controls__container--disabled': this.disabled
       }
     },
     toggleClasses () {
       return {
-        'input-group--selection-controls__toggle': true,
-        'input-group--selection-controls__toggle--active': this.isActive
+        'vf-input-group--selection-controls__toggle': true,
+        'vf-input-group--selection-controls__toggle--active': this.isActive
       }
     }
   },

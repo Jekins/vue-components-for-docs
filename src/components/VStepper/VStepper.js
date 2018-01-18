@@ -33,13 +33,13 @@ export default {
   computed: {
     classes () {
       return {
-        'stepper': true,
-        'stepper--is-booted': this.isBooted,
-        'stepper--vertical': this.vertical,
-        'stepper--alt-labels': this.altLabels,
-        'stepper--non-linear': this.nonLinear,
-        'theme--dark': this.dark,
-        'theme--light': this.light
+        'vf-stepper': true,
+        'vf-stepper--is-booted': this.isBooted,
+        'vf-stepper--vertical': this.vertical,
+        'vf-stepper--alt-labels': this.altLabels,
+        'vf-stepper--non-linear': this.nonLinear,
+        'vf-theme--dark': this.dark,
+        'vf-theme--light': this.light
       }
     }
   },

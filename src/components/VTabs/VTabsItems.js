@@ -23,7 +23,7 @@ export default {
 
   render (h) {
     const data = {
-      staticClass: 'tabs__items',
+      staticClass: 'vf-tabs__items',
       directives: []
     }
 

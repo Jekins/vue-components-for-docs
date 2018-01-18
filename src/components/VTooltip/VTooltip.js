@@ -86,10 +86,10 @@ export default {
     },
     classes () {
       return {
-        'tooltip--top': this.top,
-        'tooltip--right': this.right,
-        'tooltip--bottom': this.bottom,
-        'tooltip--left': this.left
+        'vf-tooltip--top': this.top,
+        'vf-tooltip--right': this.right,
+        'vf-tooltip--bottom': this.bottom,
+        'vf-tooltip--left': this.left
       }
     },
     computedTransition () {
@@ -132,10 +132,10 @@ export default {
 
   render (h) {
     const tooltip = h('div', {
-      staticClass: 'tooltip__content',
+      staticClass: 'vf-tooltip__content',
       'class': this.addBackgroundColorClassChecks({
         [this.contentClass]: true,
-        'menuable__content__active': this.isActive
+        'vf-menuable__content__active': this.isActive
       }),
       style: this.styles,
       attrs: this.attrs,
@@ -147,7 +147,7 @@ export default {
     }, this.$slots.default)
 
     return h(this.tag, {
-      staticClass: 'tooltip',
+      staticClass: 'vf-tooltip',
       'class': this.classes
     }, [
       h('transition', {

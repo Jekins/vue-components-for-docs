@@ -34,16 +34,16 @@ export default {
           if (this.isSelected(i)) {
             elm.setAttribute('data-selected', true)
 
-            if (!elm.classList.contains('btn--router')) {
-              elm.classList.add('btn--active')
+            if (!elm.classList.contains('vf-btn--router')) {
+              elm.classList.add('vf-btn--active')
             }
 
             selected.push(i)
           } else {
             elm.removeAttribute('data-selected')
 
-            if (!elm.classList.contains('btn--router')) {
-              elm.classList.remove('btn--active')
+            if (!elm.classList.contains('vf-btn--router')) {
+              elm.classList.remove('vf-btn--active')
             }
           }
 

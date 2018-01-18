@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       maxButtons: 0,
-      defaultColor: 'primary'
+      defaultColor: 'vf-primary'
     }
   },
 
