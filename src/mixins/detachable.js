@@ -26,7 +26,7 @@ export default {
     initDetach () {
       if (this._isDestroyed) return
 
-      const app = document.querySelector('[data-app-vf]')
+      const app = document.querySelector('[data-app]')
 
       if (!app) {
         return console.warn('Application is missing <v-app> component.')

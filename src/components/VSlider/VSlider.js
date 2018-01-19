@@ -149,7 +149,7 @@ export default {
     this.inputValue = this.value
 
     // Without a v-app, iOS does not work with body selectors
-    this.app = document.querySelector('[data-app-vf]') ||
+    this.app = document.querySelector('[data-app]') ||
       console.warn('The v-slider component requires the presence of v-app or a non-body wrapping element with the [data-app] attribute.')
   },
 

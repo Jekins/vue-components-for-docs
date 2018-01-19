@@ -42,7 +42,7 @@ export default {
 
       const parent = this.absolute
         ? this.$el.parentNode
-        : document.querySelector('[data-app-vf]')
+        : document.querySelector('[data-app]')
 
       parent && parent.insertBefore(this.overlay, parent.firstChild)
 

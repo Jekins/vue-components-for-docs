@@ -40,7 +40,7 @@ export default {
 
       this.hideScroll();
 
-      var parent = this.absolute ? this.$el.parentNode : document.querySelector('[data-app-vf]');
+      var parent = this.absolute ? this.$el.parentNode : document.querySelector('[data-app]');
 
       parent && parent.insertBefore(this.overlay, parent.firstChild);
 
