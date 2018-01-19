@@ -6,7 +6,7 @@ export function createSimpleFunctional (c, el = 'div', name) {
     functional: true,
 
     render: (h, { data, children }) => {
-      data.staticClass = (`${c} ${data.staticClass || ''}`).trim()
+      data.staticClass = (`${'vf-' + c} ${data.staticClass || ''}`).trim()
 
       return h(el, data, children)
     }

@@ -4,28 +4,28 @@ import { peerDependencies, version } from '../package.json'
 import * as components from './components'
 import * as directives from './directives'
 
-function Vuetify (Vue, args) {
-  const Vuetify = components.Vuetify
+function Doctify (Vue, args) {
+  const Doctify = components.Doctify
 
-  Vue.use(Vuetify, {
+  Vue.use(Doctify, {
     components,
     directives,
     ...args
   })
 }
 
-Vuetify.version = version
+Doctify.version = version
 
 function checkVueVersion () {
   const vueDep = peerDependencies.vue
   if (!Semver.satisfies(window.Vue.version, vueDep)) {
-    console.warn(`Vuetify requires Vue version ${vueDep}`)
+    console.warn(`Doctify requires Vue version ${vueDep}`)
   }
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.version && checkVueVersion()
-  window.Vue.use(Vuetify)
+  window.Vue.use(Doctify)
 }
 
-export default Vuetify
+export default Doctify

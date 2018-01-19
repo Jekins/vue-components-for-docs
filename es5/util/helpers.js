@@ -16,7 +16,7 @@ export function createSimpleFunctional(c) {
       var data = _ref.data,
           children = _ref.children;
 
-      data.staticClass = (c + ' ' + (data.staticClass || '')).trim();
+      data.staticClass = ('vf-' + c + ' ' + (data.staticClass || '')).trim();
 
       return h(el, data, children);
     }
