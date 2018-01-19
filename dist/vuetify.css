@@ -4246,19 +4246,19 @@ p {
   -webkit-box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12) !important;
           box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12) !important;
 }
-.vf-overflow-hidden {
+.overflow-hidden {
   overflow: hidden;
 }
-.vf-overflow-x-hidden {
+.overflow-x-hidden {
   overflow-x: hidden;
 }
-.vf-overflow-y-hidden {
+.overflow-y-hidden {
   overflow-y: hidden;
 }
-.vf-right {
+.right {
   float: right !important;
 }
-.vf-left {
+.left {
   float: left !important;
 }
 .vf-mt-0 {
@@ -4626,72 +4626,72 @@ p {
   }
 }
 @media all and (min-width: 0) {
-  .vf-text-xs-left {
+  .text-xs-left {
     text-align: left !important;
   }
-  .vf-text-xs-center {
+  .text-xs-center {
     text-align: center !important;
   }
-  .vf-text-xs-right {
+  .text-xs-right {
     text-align: right !important;
   }
-  .vf-text-xs-justify {
+  .text-xs-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 600px) {
-  .vf-text-sm-left {
+  .text-sm-left {
     text-align: left !important;
   }
-  .vf-text-sm-center {
+  .text-sm-center {
     text-align: center !important;
   }
-  .vf-text-sm-right {
+  .text-sm-right {
     text-align: right !important;
   }
-  .vf-text-sm-justify {
+  .text-sm-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 960px) {
-  .vf-text-md-left {
+  .text-md-left {
     text-align: left !important;
   }
-  .vf-text-md-center {
+  .text-md-center {
     text-align: center !important;
   }
-  .vf-text-md-right {
+  .text-md-right {
     text-align: right !important;
   }
-  .vf-text-md-justify {
+  .text-md-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 1264px) {
-  .vf-text-lg-left {
+  .text-lg-left {
     text-align: left !important;
   }
-  .vf-text-lg-center {
+  .text-lg-center {
     text-align: center !important;
   }
-  .vf-text-lg-right {
+  .text-lg-right {
     text-align: right !important;
   }
-  .vf-text-lg-justify {
+  .text-lg-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 1904px) {
-  .vf-text-xl-left {
+  .text-xl-left {
     text-align: left !important;
   }
-  .vf-text-xl-center {
+  .text-xl-center {
     text-align: center !important;
   }
-  .vf-text-xl-right {
+  .text-xl-right {
     text-align: right !important;
   }
-  .vf-text-xl-justify {
+  .text-xl-justify {
     text-align: justify !important;
   }
 }
