@@ -50,7 +50,7 @@ export default {
     var data = {
       staticClass: 'vf-application',
       'class': this.classes,
-      attrs: { 'data-app-vf': true },
+      attrs: { 'data-app': true },
       domProps: { id: this.id },
       directives: [{
         name: 'resize',
