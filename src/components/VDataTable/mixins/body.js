@@ -22,7 +22,7 @@ export default {
 
       if (this.isExpanded(props.item)) {
         const expand = this.$createElement('div', {
-          class: 'datatable__expand-content',
+          class: 'vf-datatable__expand-content',
           key: props.item[this.itemKey]
         }, this.$scopedSlots.expand(props))
 
@@ -30,15 +30,15 @@ export default {
       }
 
       const transition = this.$createElement('transition-group', {
-        class: 'datatable__expand-col',
+        class: 'vf-datatable__expand-col',
         attrs: { colspan: '100%' },
         props: {
           tag: 'td'
         },
-        on: ExpandTransitionGenerator('datatable__expand-col--expanded')
+        on: ExpandTransitionGenerator('vf-datatable__expand-col--expanded')
       }, children)
 
-      return this.genTR([transition], { class: 'datatable__expand-row' })
+      return this.genTR([transition], { class: 'vf-datatable__expand-row' })
     },
     createProps (item, index) {
       const props = { item, index }
@@ -92,7 +92,7 @@ export default {
     },
     genEmptyBody (content) {
       return this.genTR([this.$createElement('td', {
-        'class': 'text-xs-center',
+        'class': 'vf-text-xs-center',
         attrs: { colspan: '100%' }
       }, content)])
     }

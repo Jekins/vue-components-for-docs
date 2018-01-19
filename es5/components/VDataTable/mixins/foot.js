@@ -51,7 +51,7 @@ export default {
       var _this3 = this;
 
       return this.$createElement('div', {
-        'class': 'datatable__actions__select'
+        'class': 'vf-datatable__actions__select'
       }, [this.rowsPerPageText, this.$createElement('v-select', {
         attrs: {
           'aria-label': this.rowsPerPageText
@@ -87,12 +87,12 @@ export default {
       }
 
       return this.$createElement('div', {
-        'class': 'datatable__actions__pagination'
+        'class': 'vf-datatable__actions__pagination'
       }, [pagination]);
     },
     genActions: function genActions() {
       return [this.$createElement('div', {
-        'class': 'datatable__actions'
+        'class': 'vf-datatable__actions'
       }, [this.rowsPerPageItems.length > 1 ? this.genSelect() : null, this.genPagination(), this.genPrevIcon(), this.genNextIcon()])];
     },
     genTFoot: function genTFoot() {

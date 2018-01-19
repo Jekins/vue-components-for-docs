@@ -47,7 +47,7 @@ export default {
     },
     genSelect () {
       return this.$createElement('div', {
-        'class': 'datatable__actions__select'
+        'class': 'vf-datatable__actions__select'
       }, [
         this.rowsPerPageText,
         this.$createElement('v-select', {
@@ -90,12 +90,12 @@ export default {
       }
 
       return this.$createElement('div', {
-        'class': 'datatable__actions__pagination'
+        'class': 'vf-datatable__actions__pagination'
       }, [pagination])
     },
     genActions () {
       return [this.$createElement('div', {
-        'class': 'datatable__actions'
+        'class': 'vf-datatable__actions'
       }, [
         this.rowsPerPageItems.length > 1 ? this.genSelect() : null,
         this.genPagination(),

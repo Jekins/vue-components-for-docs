@@ -10177,7 +10177,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
       if (this.isExpanded(props.item)) {
         var expand = this.$createElement('div', {
-          class: 'datatable__expand-content',
+          class: 'vf-datatable__expand-content',
           key: props.item[this.itemKey]
         }, this.$scopedSlots.expand(props));
 
@@ -10185,15 +10185,15 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
       }
 
       var transition = this.$createElement('transition-group', {
-        class: 'datatable__expand-col',
+        class: 'vf-datatable__expand-col',
         attrs: { colspan: '100%' },
         props: {
           tag: 'td'
         },
-        on: Object(__WEBPACK_IMPORTED_MODULE_0__transitions_expand_transition__["a" /* default */])('datatable__expand-col--expanded')
+        on: Object(__WEBPACK_IMPORTED_MODULE_0__transitions_expand_transition__["a" /* default */])('vf-datatable__expand-col--expanded')
       }, children);
 
-      return this.genTR([transition], { class: 'datatable__expand-row' });
+      return this.genTR([transition], { class: 'vf-datatable__expand-row' });
     },
     createProps: function createProps(item, index) {
       var _this = this;
@@ -10252,7 +10252,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     },
     genEmptyBody: function genEmptyBody(content) {
       return this.genTR([this.$createElement('td', {
-        'class': 'text-xs-center',
+        'class': 'vf-text-xs-center',
         attrs: { colspan: '100%' }
       }, content)]);
     }
@@ -10317,7 +10317,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
       var _this3 = this;
 
       return this.$createElement('div', {
-        'class': 'datatable__actions__select'
+        'class': 'vf-datatable__actions__select'
       }, [this.rowsPerPageText, this.$createElement('v-select', {
         attrs: {
           'aria-label': this.rowsPerPageText
@@ -10353,12 +10353,12 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
       }
 
       return this.$createElement('div', {
-        'class': 'datatable__actions__pagination'
+        'class': 'vf-datatable__actions__pagination'
       }, [pagination]);
     },
     genActions: function genActions() {
       return [this.$createElement('div', {
-        'class': 'datatable__actions'
+        'class': 'vf-datatable__actions'
       }, [this.rowsPerPageItems.length > 1 ? this.genSelect() : null, this.genPagination(), this.genPrevIcon(), this.genNextIcon()])];
     },
     genTFoot: function genTFoot() {
