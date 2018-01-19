@@ -22,7 +22,7 @@ export default function Grid (name) {
           const value = data.attrs[key]
 
           if (typeof value === 'string') classes.push('vf-' + key)
-          else if (value) classes.push(key)
+          else if (value) classes.push('vf-' + key)
         })
 
         if (classes.length) data.staticClass += ` ${classes.join(' ')}`
