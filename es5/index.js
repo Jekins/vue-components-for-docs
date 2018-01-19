@@ -6,27 +6,27 @@ import { peerDependencies, version } from '../package.json';
 import * as components from './components';
 import * as directives from './directives';
 
-function Doctify(Vue, args) {
-  var Doctify = components.Doctify;
+function Vuetify(Vue, args) {
+  var Vuetify = components.Vuetify;
 
-  Vue.use(Doctify, _extends({
+  Vue.use(Vuetify, _extends({
     components: components,
     directives: directives
   }, args));
 }
 
-Doctify.version = version;
+Vuetify.version = version;
 
 function checkVueVersion() {
   var vueDep = peerDependencies.vue;
   if (!Semver.satisfies(window.Vue.version, vueDep)) {
-    console.warn('Doctify requires Vue version ' + vueDep);
+    console.warn('Vuetify requires Vue version ' + vueDep);
   }
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.version && checkVueVersion();
-  window.Vue.use(Doctify);
+  window.Vue.use(Vuetify);
 }
 
-export default Doctify;
+export default Vuetify;
