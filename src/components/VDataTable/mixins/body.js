@@ -92,7 +92,7 @@ export default {
     },
     genEmptyBody (content) {
       return this.genTR([this.$createElement('td', {
-        'class': 'vf-text-xs-center',
+        'class': 'text-xs-center',
         attrs: { colspan: '100%' }
       }, content)])
     }
