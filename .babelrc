@@ -13,7 +13,7 @@
             "~components": "components",
             "~directives": "directives",
             "~mixins": "mixins",
-            "~styles": "styles",
+            "~stylus": "stylus",
             "~util": "util"
           }
         }]
@@ -24,7 +24,7 @@
         ["es2015",  {"modules": false}],
         ["stage-2"]
       ],
-      "plugins": ["./build/babel-transform-styles-paths.js"]
+      "plugins": ["./build/babel-transform-stylus-paths.js"]
     },
     "development": {
       "presets": [
