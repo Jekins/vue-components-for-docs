@@ -4117,7 +4117,7 @@ html {
   font-size: 12px !important;
   font-weight: 400;
 }
-.btn {
+.vf-btn {
   font-size: 14px;
   font-weight: 500;
 }
@@ -4246,295 +4246,295 @@ p {
   -webkit-box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12) !important;
           box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12) !important;
 }
-.overflow-hidden {
+.vf-overflow-hidden {
   overflow: hidden;
 }
-.overflow-x-hidden {
+.vf-overflow-x-hidden {
   overflow-x: hidden;
 }
-.overflow-y-hidden {
+.vf-overflow-y-hidden {
   overflow-y: hidden;
 }
-.right {
+.vf-right {
   float: right !important;
 }
-.left {
+.vf-left {
   float: left !important;
 }
-.mt-0 {
+.vf-mt-0 {
   margin-top: 0 !important;
 }
-.mr-0 {
+.vf-mr-0 {
   margin-right: 0 !important;
 }
-.mb-0 {
+.vf-mb-0 {
   margin-bottom: 0 !important;
 }
-.ml-0 {
+.vf-ml-0 {
   margin-left: 0 !important;
 }
-.mx-0 {
+.vf-mx-0 {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-.my-0 {
+.vf-my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-.ma-0 {
+.vf-ma-0 {
   margin: 0 0 !important;
 }
-.pt-0 {
+.vf-pt-0 {
   padding-top: 0 !important;
 }
-.pr-0 {
+.vf-pr-0 {
   padding-right: 0 !important;
 }
-.pb-0 {
+.vf-pb-0 {
   padding-bottom: 0 !important;
 }
-.pl-0 {
+.vf-pl-0 {
   padding-left: 0 !important;
 }
-.px-0 {
+.vf-px-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-.py-0 {
+.vf-py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-.pa-0 {
+.vf-pa-0 {
   padding: 0 0 !important;
 }
-.mt-1 {
+.vf-mt-1 {
   margin-top: 4px !important;
 }
-.mr-1 {
+.vf-mr-1 {
   margin-right: 4px !important;
 }
-.mb-1 {
+.vf-mb-1 {
   margin-bottom: 4px !important;
 }
-.ml-1 {
+.vf-ml-1 {
   margin-left: 4px !important;
 }
-.mx-1 {
+.vf-mx-1 {
   margin-left: 4px !important;
   margin-right: 4px !important;
 }
-.my-1 {
+.vf-my-1 {
   margin-top: 4px !important;
   margin-bottom: 4px !important;
 }
-.ma-1 {
+.vf-ma-1 {
   margin: 4px 4px !important;
 }
-.pt-1 {
+.vf-pt-1 {
   padding-top: 4px !important;
 }
-.pr-1 {
+.vf-pr-1 {
   padding-right: 4px !important;
 }
-.pb-1 {
+.vf-pb-1 {
   padding-bottom: 4px !important;
 }
-.pl-1 {
+.vf-pl-1 {
   padding-left: 4px !important;
 }
-.px-1 {
+.vf-px-1 {
   padding-left: 4px !important;
   padding-right: 4px !important;
 }
-.py-1 {
+.vf-py-1 {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
 }
-.pa-1 {
+.vf-pa-1 {
   padding: 4px 4px !important;
 }
-.mt-2 {
+.vf-mt-2 {
   margin-top: 8px !important;
 }
-.mr-2 {
+.vf-mr-2 {
   margin-right: 8px !important;
 }
-.mb-2 {
+.vf-mb-2 {
   margin-bottom: 8px !important;
 }
-.ml-2 {
+.vf-ml-2 {
   margin-left: 8px !important;
 }
-.mx-2 {
+.vf-mx-2 {
   margin-left: 8px !important;
   margin-right: 8px !important;
 }
-.my-2 {
+.vf-my-2 {
   margin-top: 8px !important;
   margin-bottom: 8px !important;
 }
-.ma-2 {
+.vf-ma-2 {
   margin: 8px 8px !important;
 }
-.pt-2 {
+.vf-pt-2 {
   padding-top: 8px !important;
 }
-.pr-2 {
+.vf-pr-2 {
   padding-right: 8px !important;
 }
-.pb-2 {
+.vf-pb-2 {
   padding-bottom: 8px !important;
 }
-.pl-2 {
+.vf-pl-2 {
   padding-left: 8px !important;
 }
-.px-2 {
+.vf-px-2 {
   padding-left: 8px !important;
   padding-right: 8px !important;
 }
-.py-2 {
+.vf-py-2 {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
 }
-.pa-2 {
+.vf-pa-2 {
   padding: 8px 8px !important;
 }
-.mt-3 {
+.vf-mt-3 {
   margin-top: 16px !important;
 }
-.mr-3 {
+.vf-mr-3 {
   margin-right: 16px !important;
 }
-.mb-3 {
+.vf-mb-3 {
   margin-bottom: 16px !important;
 }
-.ml-3 {
+.vf-ml-3 {
   margin-left: 16px !important;
 }
-.mx-3 {
+.vf-mx-3 {
   margin-left: 16px !important;
   margin-right: 16px !important;
 }
-.my-3 {
+.vf-my-3 {
   margin-top: 16px !important;
   margin-bottom: 16px !important;
 }
-.ma-3 {
+.vf-ma-3 {
   margin: 16px 16px !important;
 }
-.pt-3 {
+.vf-pt-3 {
   padding-top: 16px !important;
 }
-.pr-3 {
+.vf-pr-3 {
   padding-right: 16px !important;
 }
-.pb-3 {
+.vf-pb-3 {
   padding-bottom: 16px !important;
 }
-.pl-3 {
+.vf-pl-3 {
   padding-left: 16px !important;
 }
-.px-3 {
+.vf-px-3 {
   padding-left: 16px !important;
   padding-right: 16px !important;
 }
-.py-3 {
+.vf-py-3 {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
 }
-.pa-3 {
+.vf-pa-3 {
   padding: 16px 16px !important;
 }
-.mt-4 {
+.vf-mt-4 {
   margin-top: 24px !important;
 }
-.mr-4 {
+.vf-mr-4 {
   margin-right: 24px !important;
 }
-.mb-4 {
+.vf-mb-4 {
   margin-bottom: 24px !important;
 }
-.ml-4 {
+.vf-ml-4 {
   margin-left: 24px !important;
 }
-.mx-4 {
+.vf-mx-4 {
   margin-left: 24px !important;
   margin-right: 24px !important;
 }
-.my-4 {
+.vf-my-4 {
   margin-top: 24px !important;
   margin-bottom: 24px !important;
 }
-.ma-4 {
+.vf-ma-4 {
   margin: 24px 24px !important;
 }
-.pt-4 {
+.vf-pt-4 {
   padding-top: 24px !important;
 }
-.pr-4 {
+.vf-pr-4 {
   padding-right: 24px !important;
 }
-.pb-4 {
+.vf-pb-4 {
   padding-bottom: 24px !important;
 }
-.pl-4 {
+.vf-pl-4 {
   padding-left: 24px !important;
 }
-.px-4 {
+.vf-px-4 {
   padding-left: 24px !important;
   padding-right: 24px !important;
 }
-.py-4 {
+.vf-py-4 {
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
-.pa-4 {
+.vf-pa-4 {
   padding: 24px 24px !important;
 }
-.mt-5 {
+.vf-mt-5 {
   margin-top: 48px !important;
 }
-.mr-5 {
+.vf-mr-5 {
   margin-right: 48px !important;
 }
-.mb-5 {
+.vf-mb-5 {
   margin-bottom: 48px !important;
 }
-.ml-5 {
+.vf-ml-5 {
   margin-left: 48px !important;
 }
-.mx-5 {
+.vf-mx-5 {
   margin-left: 48px !important;
   margin-right: 48px !important;
 }
-.my-5 {
+.vf-my-5 {
   margin-top: 48px !important;
   margin-bottom: 48px !important;
 }
-.ma-5 {
+.vf-ma-5 {
   margin: 48px 48px !important;
 }
-.pt-5 {
+.vf-pt-5 {
   padding-top: 48px !important;
 }
-.pr-5 {
+.vf-pr-5 {
   padding-right: 48px !important;
 }
-.pb-5 {
+.vf-pb-5 {
   padding-bottom: 48px !important;
 }
-.pl-5 {
+.vf-pl-5 {
   padding-left: 48px !important;
 }
-.px-5 {
+.vf-px-5 {
   padding-left: 48px !important;
   padding-right: 48px !important;
 }
-.py-5 {
+.vf-py-5 {
   padding-top: 48px !important;
   padding-bottom: 48px !important;
 }
-.pa-5 {
+.vf-pa-5 {
   padding: 48px 48px !important;
 }
 .vf-tooltip {
@@ -4626,72 +4626,72 @@ p {
   }
 }
 @media all and (min-width: 0) {
-  .text-xs-left {
+  .vf-text-xs-left {
     text-align: left !important;
   }
-  .text-xs-center {
+  .vf-text-xs-center {
     text-align: center !important;
   }
-  .text-xs-right {
+  .vf-text-xs-right {
     text-align: right !important;
   }
-  .text-xs-justify {
+  .vf-text-xs-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 600px) {
-  .text-sm-left {
+  .vf-text-sm-left {
     text-align: left !important;
   }
-  .text-sm-center {
+  .vf-text-sm-center {
     text-align: center !important;
   }
-  .text-sm-right {
+  .vf-text-sm-right {
     text-align: right !important;
   }
-  .text-sm-justify {
+  .vf-text-sm-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 960px) {
-  .text-md-left {
+  .vf-text-md-left {
     text-align: left !important;
   }
-  .text-md-center {
+  .vf-text-md-center {
     text-align: center !important;
   }
-  .text-md-right {
+  .vf-text-md-right {
     text-align: right !important;
   }
-  .text-md-justify {
+  .vf-text-md-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 1264px) {
-  .text-lg-left {
+  .vf-text-lg-left {
     text-align: left !important;
   }
-  .text-lg-center {
+  .vf-text-lg-center {
     text-align: center !important;
   }
-  .text-lg-right {
+  .vf-text-lg-right {
     text-align: right !important;
   }
-  .text-lg-justify {
+  .vf-text-lg-justify {
     text-align: justify !important;
   }
 }
 @media all and (min-width: 1904px) {
-  .text-xl-left {
+  .vf-text-xl-left {
     text-align: left !important;
   }
-  .text-xl-center {
+  .vf-text-xl-center {
     text-align: center !important;
   }
-  .text-xl-right {
+  .vf-text-xl-right {
     text-align: right !important;
   }
-  .text-xl-justify {
+  .vf-text-xl-justify {
     text-align: justify !important;
   }
 }
@@ -8833,7 +8833,7 @@ table.vf-table tfoot tr {
   }
 }
 @media all and (min-width: 0) {
-  .vf-flex.xs1 {
+  .vf-flex.vf-xs1 {
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
     max-width: 8.333333333333332%;
@@ -8843,7 +8843,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 1;
     order: 1;
   }
-  .vf-flex.xs2 {
+  .vf-flex.vf-xs2 {
     -ms-flex-preferred-size: 16.666666666666664%;
     flex-basis: 16.666666666666664%;
     max-width: 16.666666666666664%;
@@ -8853,7 +8853,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 2;
     order: 2;
   }
-  .vf-flex.xs3 {
+  .vf-flex.vf-xs3 {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
@@ -8863,7 +8863,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 3;
     order: 3;
   }
-  .vf-flex.xs4 {
+  .vf-flex.vf-xs4 {
     -ms-flex-preferred-size: 33.33333333333333%;
     flex-basis: 33.33333333333333%;
     max-width: 33.33333333333333%;
@@ -8873,7 +8873,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 4;
     order: 4;
   }
-  .vf-flex.xs5 {
+  .vf-flex.vf-xs5 {
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
     max-width: 41.66666666666667%;
@@ -8883,7 +8883,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 5;
     order: 5;
   }
-  .vf-flex.xs6 {
+  .vf-flex.vf-xs6 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
@@ -8893,7 +8893,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 6;
     order: 6;
   }
-  .vf-flex.xs7 {
+  .vf-flex.vf-xs7 {
     -ms-flex-preferred-size: 58.333333333333336%;
     flex-basis: 58.333333333333336%;
     max-width: 58.333333333333336%;
@@ -8903,7 +8903,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 7;
     order: 7;
   }
-  .vf-flex.xs8 {
+  .vf-flex.vf-xs8 {
     -ms-flex-preferred-size: 66.66666666666666%;
     flex-basis: 66.66666666666666%;
     max-width: 66.66666666666666%;
@@ -8913,7 +8913,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 8;
     order: 8;
   }
-  .vf-flex.xs9 {
+  .vf-flex.vf-xs9 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%;
@@ -8923,7 +8923,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 9;
     order: 9;
   }
-  .vf-flex.xs10 {
+  .vf-flex.vf-xs10 {
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
@@ -8933,7 +8933,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 10;
     order: 10;
   }
-  .vf-flex.xs11 {
+  .vf-flex.vf-xs11 {
     -ms-flex-preferred-size: 91.66666666666666%;
     flex-basis: 91.66666666666666%;
     max-width: 91.66666666666666%;
@@ -8943,7 +8943,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 11;
     order: 11;
   }
-  .vf-flex.xs12 {
+  .vf-flex.vf-xs12 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
@@ -8994,7 +8994,7 @@ table.vf-table tfoot tr {
   }
 }
 @media all and (min-width: 600px) {
-  .vf-flex.sm1 {
+  .vf-flex.vf-sm1 {
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
     max-width: 8.333333333333332%;
@@ -9004,7 +9004,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 1;
     order: 1;
   }
-  .vf-flex.sm2 {
+  .vf-flex.vf-sm2 {
     -ms-flex-preferred-size: 16.666666666666664%;
     flex-basis: 16.666666666666664%;
     max-width: 16.666666666666664%;
@@ -9014,7 +9014,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 2;
     order: 2;
   }
-  .vf-flex.sm3 {
+  .vf-flex.vf-sm3 {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
@@ -9024,7 +9024,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 3;
     order: 3;
   }
-  .vf-flex.sm4 {
+  .vf-flex.vf-sm4 {
     -ms-flex-preferred-size: 33.33333333333333%;
     flex-basis: 33.33333333333333%;
     max-width: 33.33333333333333%;
@@ -9034,7 +9034,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 4;
     order: 4;
   }
-  .vf-flex.sm5 {
+  .vf-flex.vf-sm5 {
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
     max-width: 41.66666666666667%;
@@ -9044,7 +9044,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 5;
     order: 5;
   }
-  .vf-flex.sm6 {
+  .vf-flex.vf-sm6 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
@@ -9054,7 +9054,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 6;
     order: 6;
   }
-  .vf-flex.sm7 {
+  .vf-flex.vf-sm7 {
     -ms-flex-preferred-size: 58.333333333333336%;
     flex-basis: 58.333333333333336%;
     max-width: 58.333333333333336%;
@@ -9064,7 +9064,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 7;
     order: 7;
   }
-  .vf-flex.sm8 {
+  .vf-flex.vf-sm8 {
     -ms-flex-preferred-size: 66.66666666666666%;
     flex-basis: 66.66666666666666%;
     max-width: 66.66666666666666%;
@@ -9074,7 +9074,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 8;
     order: 8;
   }
-  .vf-flex.sm9 {
+  .vf-flex.vf-sm9 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%;
@@ -9084,7 +9084,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 9;
     order: 9;
   }
-  .vf-flex.sm10 {
+  .vf-flex.vf-sm10 {
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
@@ -9094,7 +9094,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 10;
     order: 10;
   }
-  .vf-flex.sm11 {
+  .vf-flex.vf-sm11 {
     -ms-flex-preferred-size: 91.66666666666666%;
     flex-basis: 91.66666666666666%;
     max-width: 91.66666666666666%;
@@ -9104,7 +9104,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 11;
     order: 11;
   }
-  .vf-flex.sm12 {
+  .vf-flex.vf-sm12 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
@@ -9155,7 +9155,7 @@ table.vf-table tfoot tr {
   }
 }
 @media all and (min-width: 960px) {
-  .vf-flex.md1 {
+  .vf-flex.vf-md1 {
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
     max-width: 8.333333333333332%;
@@ -9165,7 +9165,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 1;
     order: 1;
   }
-  .vf-flex.md2 {
+  .vf-flex.vf-md2 {
     -ms-flex-preferred-size: 16.666666666666664%;
     flex-basis: 16.666666666666664%;
     max-width: 16.666666666666664%;
@@ -9175,7 +9175,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 2;
     order: 2;
   }
-  .vf-flex.md3 {
+  .vf-flex.vf-md3 {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
@@ -9185,7 +9185,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 3;
     order: 3;
   }
-  .vf-flex.md4 {
+  .vf-flex.vf-md4 {
     -ms-flex-preferred-size: 33.33333333333333%;
     flex-basis: 33.33333333333333%;
     max-width: 33.33333333333333%;
@@ -9195,7 +9195,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 4;
     order: 4;
   }
-  .vf-flex.md5 {
+  .vf-flex.vf-md5 {
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
     max-width: 41.66666666666667%;
@@ -9205,7 +9205,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 5;
     order: 5;
   }
-  .vf-flex.md6 {
+  .vf-flex.vf-md6 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
@@ -9215,7 +9215,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 6;
     order: 6;
   }
-  .vf-flex.md7 {
+  .vf-flex.vf-md7 {
     -ms-flex-preferred-size: 58.333333333333336%;
     flex-basis: 58.333333333333336%;
     max-width: 58.333333333333336%;
@@ -9225,7 +9225,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 7;
     order: 7;
   }
-  .vf-flex.md8 {
+  .vf-flex.vf-md8 {
     -ms-flex-preferred-size: 66.66666666666666%;
     flex-basis: 66.66666666666666%;
     max-width: 66.66666666666666%;
@@ -9235,7 +9235,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 8;
     order: 8;
   }
-  .vf-flex.md9 {
+  .vf-flex.vf-md9 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%;
@@ -9245,7 +9245,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 9;
     order: 9;
   }
-  .vf-flex.md10 {
+  .vf-flex.vf-md10 {
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
@@ -9255,7 +9255,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 10;
     order: 10;
   }
-  .vf-flex.md11 {
+  .vf-flex.vf-md11 {
     -ms-flex-preferred-size: 91.66666666666666%;
     flex-basis: 91.66666666666666%;
     max-width: 91.66666666666666%;
@@ -9265,7 +9265,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 11;
     order: 11;
   }
-  .vf-flex.md12 {
+  .vf-flex.vf-md12 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
@@ -9316,7 +9316,7 @@ table.vf-table tfoot tr {
   }
 }
 @media all and (min-width: 1264px) {
-  .vf-flex.lg1 {
+  .vf-flex.vf-lg1 {
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
     max-width: 8.333333333333332%;
@@ -9326,7 +9326,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 1;
     order: 1;
   }
-  .vf-flex.lg2 {
+  .vf-flex.vf-lg2 {
     -ms-flex-preferred-size: 16.666666666666664%;
     flex-basis: 16.666666666666664%;
     max-width: 16.666666666666664%;
@@ -9336,7 +9336,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 2;
     order: 2;
   }
-  .vf-flex.lg3 {
+  .vf-flex.vf-lg3 {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
@@ -9346,7 +9346,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 3;
     order: 3;
   }
-  .vf-flex.lg4 {
+  .vf-flex.vf-lg4 {
     -ms-flex-preferred-size: 33.33333333333333%;
     flex-basis: 33.33333333333333%;
     max-width: 33.33333333333333%;
@@ -9356,7 +9356,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 4;
     order: 4;
   }
-  .vf-flex.lg5 {
+  .vf-flex.vf-lg5 {
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
     max-width: 41.66666666666667%;
@@ -9366,7 +9366,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 5;
     order: 5;
   }
-  .vf-flex.lg6 {
+  .vf-flex.vf-lg6 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
@@ -9376,7 +9376,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 6;
     order: 6;
   }
-  .vf-flex.lg7 {
+  .vf-flex.vf-lg7 {
     -ms-flex-preferred-size: 58.333333333333336%;
     flex-basis: 58.333333333333336%;
     max-width: 58.333333333333336%;
@@ -9386,7 +9386,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 7;
     order: 7;
   }
-  .vf-flex.lg8 {
+  .vf-flex.vf-lg8 {
     -ms-flex-preferred-size: 66.66666666666666%;
     flex-basis: 66.66666666666666%;
     max-width: 66.66666666666666%;
@@ -9396,7 +9396,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 8;
     order: 8;
   }
-  .vf-flex.lg9 {
+  .vf-flex.vf-lg9 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%;
@@ -9406,7 +9406,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 9;
     order: 9;
   }
-  .vf-flex.lg10 {
+  .vf-flex.vf-lg10 {
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
@@ -9416,7 +9416,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 10;
     order: 10;
   }
-  .vf-flex.lg11 {
+  .vf-flex.vf-lg11 {
     -ms-flex-preferred-size: 91.66666666666666%;
     flex-basis: 91.66666666666666%;
     max-width: 91.66666666666666%;
@@ -9426,7 +9426,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 11;
     order: 11;
   }
-  .vf-flex.lg12 {
+  .vf-flex.vf-lg12 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
@@ -9477,7 +9477,7 @@ table.vf-table tfoot tr {
   }
 }
 @media all and (min-width: 1904px) {
-  .vf-flex.xl1 {
+  .vf-flex.vf-xl1 {
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
     max-width: 8.333333333333332%;
@@ -9487,7 +9487,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 1;
     order: 1;
   }
-  .vf-flex.xl2 {
+  .vf-flex.vf-xl2 {
     -ms-flex-preferred-size: 16.666666666666664%;
     flex-basis: 16.666666666666664%;
     max-width: 16.666666666666664%;
@@ -9497,7 +9497,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 2;
     order: 2;
   }
-  .vf-flex.xl3 {
+  .vf-flex.vf-xl3 {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%;
@@ -9507,7 +9507,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 3;
     order: 3;
   }
-  .vf-flex.xl4 {
+  .vf-flex.vf-xl4 {
     -ms-flex-preferred-size: 33.33333333333333%;
     flex-basis: 33.33333333333333%;
     max-width: 33.33333333333333%;
@@ -9517,7 +9517,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 4;
     order: 4;
   }
-  .vf-flex.xl5 {
+  .vf-flex.vf-xl5 {
     -ms-flex-preferred-size: 41.66666666666667%;
     flex-basis: 41.66666666666667%;
     max-width: 41.66666666666667%;
@@ -9527,7 +9527,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 5;
     order: 5;
   }
-  .vf-flex.xl6 {
+  .vf-flex.vf-xl6 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
@@ -9537,7 +9537,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 6;
     order: 6;
   }
-  .vf-flex.xl7 {
+  .vf-flex.vf-xl7 {
     -ms-flex-preferred-size: 58.333333333333336%;
     flex-basis: 58.333333333333336%;
     max-width: 58.333333333333336%;
@@ -9547,7 +9547,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 7;
     order: 7;
   }
-  .vf-flex.xl8 {
+  .vf-flex.vf-xl8 {
     -ms-flex-preferred-size: 66.66666666666666%;
     flex-basis: 66.66666666666666%;
     max-width: 66.66666666666666%;
@@ -9557,7 +9557,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 8;
     order: 8;
   }
-  .vf-flex.xl9 {
+  .vf-flex.vf-xl9 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%;
@@ -9567,7 +9567,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 9;
     order: 9;
   }
-  .vf-flex.xl10 {
+  .vf-flex.vf-xl10 {
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
@@ -9577,7 +9577,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 10;
     order: 10;
   }
-  .vf-flex.xl11 {
+  .vf-flex.vf-xl11 {
     -ms-flex-preferred-size: 91.66666666666666%;
     flex-basis: 91.66666666666666%;
     max-width: 91.66666666666666%;
@@ -9587,7 +9587,7 @@ table.vf-table tfoot tr {
     -ms-flex-order: 11;
     order: 11;
   }
-  .vf-flex.xl12 {
+  .vf-flex.vf-xl12 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;

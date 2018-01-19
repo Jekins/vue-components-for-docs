@@ -69,7 +69,7 @@
 for size, width in $grid-breakpoints
   @media all and (min-width: width)
     for n in (1..$grid-columns)
-      .vf-flex.{size}{n}
+      .vf-flex.vf-{size}{n}
         flex-basis: (n / $grid-columns * 100)%
         max-width: (n / $grid-columns * 100)%
 

@@ -26,7 +26,7 @@ export default {
   props: {
     activeClass: {
       type: String,
-      default: 'primary--text'
+      default: 'vf-primary--text'
     },
     avatar: Boolean,
     inactive: Boolean,
