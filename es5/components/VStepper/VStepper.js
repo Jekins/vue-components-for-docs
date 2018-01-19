@@ -38,8 +38,8 @@ export default {
         'vf-stepper--vertical': this.vertical,
         'vf-stepper--alt-labels': this.altLabels,
         'vf-stepper--non-linear': this.nonLinear,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       };
     }
   },

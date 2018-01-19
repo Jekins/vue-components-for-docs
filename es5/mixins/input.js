@@ -64,8 +64,8 @@ export default {
         'vf-input-group--required': this.required,
         'vf-input-group--hide-details': this.hideDetails,
         'vf-input-group--placeholder': !!this.placeholder,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       }, this.classes);
     },
     isDirty: function isDirty() {

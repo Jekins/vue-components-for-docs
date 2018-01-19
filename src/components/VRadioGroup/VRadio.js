@@ -52,8 +52,8 @@ export default {
         'vf-input-group--selection-controls': true,
         'vf-input-group--tab-focused': this.tabFocused,
         'vf-radio': true,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       }
 
       if (!this.parentError) {

@@ -154,7 +154,7 @@ export default {
 
   render: function render(h) {
     var data = {
-      staticClass: 'menu',
+      staticClass: 'vf-menu',
       class: {
         'vf-menu--disabled': this.disabled
       },

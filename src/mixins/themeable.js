@@ -7,8 +7,8 @@ export default {
   computed: {
     themeClasses () {
       return {
-        'vf-theme--light': this.light,
-        'vf-theme--dark': this.dark
+        'theme--light': this.light,
+        'theme--dark': this.dark
       }
     }
   }

@@ -180,7 +180,7 @@ export default {
 
   render (h) {
     const data = {
-      staticClass: 'menu',
+      staticClass: 'vf-menu',
       class: {
         'vf-menu--disabled': this.disabled
       },

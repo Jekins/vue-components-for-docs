@@ -17,7 +17,7 @@ export default function Grid(name) {
           data = _ref.data,
           children = _ref.children;
 
-      data.staticClass = (name + ' ' + (data.staticClass || '')).trim();
+      data.staticClass = ('vf-' + name + ' vf-' + (data.staticClass || '')).trim();
 
       if (data.attrs) {
         var classes = [];
@@ -25,7 +25,7 @@ export default function Grid(name) {
         Object.keys(data.attrs).forEach(function (key) {
           var value = data.attrs[key];
 
-          if (typeof value === 'string') classes.push(key);else if (value) classes.push(key);
+          if (typeof value === 'string') classes.push('vf-' + key);else if (value) classes.push(key);
         });
 
         if (classes.length) data.staticClass += ' ' + classes.join(' ');

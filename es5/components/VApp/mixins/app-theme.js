@@ -49,10 +49,10 @@ export default {
       return '.vf-application a{color: ' + color + ';}';
     },
     genBackgroundColor: function genBackgroundColor(key, value) {
-      return '.' + key + '{background-color:' + value + ' !important;border-color:' + value + ' !important;}';
+      return '.vf-' + key + '{background-color:' + value + ' !important;border-color:' + value + ' !important;}';
     },
     genTextColor: function genTextColor(key, value) {
-      return '.' + key + '--text{color:' + value + ' !important;}';
+      return '.vf-' + key + '--text{color:' + value + ' !important;}';
     },
     genStyle: function genStyle() {
       var style = document.querySelector('[data-vue-ssr-id=vuetify-theme-stylesheet]');

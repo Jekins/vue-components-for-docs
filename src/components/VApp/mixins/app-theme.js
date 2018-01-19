@@ -48,10 +48,10 @@ export default {
       return `.vf-application a{color: ${color};}`
     },
     genBackgroundColor (key, value) {
-      return `.${key}{background-color:${value} !important;border-color:${value} !important;}`
+      return `.vf-${key}{background-color:${value} !important;border-color:${value} !important;}`
     },
     genTextColor (key, value) {
-      return `.${key}--text{color:${value} !important;}`
+      return `.vf-${key}--text{color:${value} !important;}`
     },
     genStyle () {
       let style = document.querySelector('[data-vue-ssr-id=vuetify-theme-stylesheet]')

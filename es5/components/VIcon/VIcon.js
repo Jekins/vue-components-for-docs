@@ -54,8 +54,8 @@ export default {
       'vf-icon--medium': props.medium,
       'vf-icon--right': props.right,
       'vf-icon--x-large': props.xLarge,
-      'vf-theme--dark': props.dark,
-      'vf-theme--light': props.light
+      'theme--dark': props.dark,
+      'theme--light': props.light
     }, props.color ? Colorable.methods.addTextColorClassChecks.call(props, {}, 'color') : {
       'vf-primary--text': props.primary,
       'vf-secondary--text': props.secondary,

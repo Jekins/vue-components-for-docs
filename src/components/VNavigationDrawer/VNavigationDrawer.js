@@ -80,8 +80,8 @@ export default {
         'vf-navigation-drawer--open': this.isActive,
         'vf-navigation-drawer--right': this.right,
         'vf-navigation-drawer--temporary': this.temporary,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       }
     },
     isMobile () {

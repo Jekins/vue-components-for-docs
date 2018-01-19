@@ -79,8 +79,8 @@ export default {
         'vf-toolbar--floating': this.floating,
         'vf-toolbar--prominent': this.prominent,
         'vf-toolbar--extended': this.isExtended,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       })
     },
     isScrolling: {

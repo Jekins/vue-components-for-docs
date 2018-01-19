@@ -53,13 +53,13 @@ export default {
     classes: function classes() {
       return {
         'vf-tabs__bar': true,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       };
     },
     containerClasses: function containerClasses() {
       return {
-        'tabs__container': true
+        'vf-tabs__container': true
       };
     },
     wrapperClasses: function wrapperClasses() {

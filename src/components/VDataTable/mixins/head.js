@@ -44,7 +44,7 @@ export default {
       return this.$createElement('th', ...this.genHeaderData(header, array))
     },
     genHeaderData (header, children) {
-      const classes = ['column']
+      const classes = ['vf-column']
       const data = {
         attrs: {
           role: 'columnheader',
@@ -61,7 +61,7 @@ export default {
         data.attrs['aria-label'] += ': Not sorted.' // TODO: Localization
       }
 
-      classes.push(`text-xs-${header.align || 'right'}`)
+      classes.push(`vf-text-xs-${header.align || 'right'}`)
       if (Array.isArray(header.class)) {
         classes.push(...header.class)
       } else if (header.class) {
@@ -91,7 +91,7 @@ export default {
         }
       }
 
-      classes.push('sortable')
+      classes.push('vf-sortable')
       const icon = this.$createElement('v-icon', 'arrow_upward')
       if (header.align && header.align === 'left') {
         children.push(icon)
@@ -102,13 +102,13 @@ export default {
       const pagination = this.computedPagination
       const beingSorted = pagination.sortBy === header.value
       if (beingSorted) {
-        classes.push('active')
+        classes.push('vf-active')
         if (pagination.descending) {
-          classes.push('desc')
+          classes.push('vf-desc')
           data.attrs['aria-sort'] = 'descending'
           data.attrs['aria-label'] += ': Sorted descending. Activate to remove sorting.' // TODO: Localization
         } else {
-          classes.push('asc')
+          classes.push('vf-asc')
           data.attrs['aria-sort'] = 'ascending'
           data.attrs['aria-label'] += ': Sorted ascending. Activate to sort descending.' // TODO: Localization
         }

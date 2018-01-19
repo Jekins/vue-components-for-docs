@@ -60,7 +60,7 @@ export default {
     genContent () {
       const options = {
         'class': [
-          (`vf-menu__content ${this.contentClass}`).trim(),
+          (`vf-menu__content vf-${this.contentClass}`).trim(),
           { 'vf-menuable__content__active': this.isActive }
         ],
         style: this.styles,

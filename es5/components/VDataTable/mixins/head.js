@@ -46,7 +46,7 @@ export default {
       return this.$createElement.apply(this, ['th'].concat(_toConsumableArray(this.genHeaderData(header, array))));
     },
     genHeaderData: function genHeaderData(header, children) {
-      var classes = ['column'];
+      var classes = ['vf-column'];
       var data = {
         attrs: {
           role: 'columnheader',
@@ -63,7 +63,7 @@ export default {
         data.attrs['aria-label'] += ': Not sorted.'; // TODO: Localization
       }
 
-      classes.push('text-xs-' + (header.align || 'right'));
+      classes.push('vf-text-xs-' + (header.align || 'right'));
       if (Array.isArray(header.class)) {
         classes.push.apply(classes, _toConsumableArray(header.class));
       } else if (header.class) {
@@ -95,7 +95,7 @@ export default {
         }
       };
 
-      classes.push('sortable');
+      classes.push('vf-sortable');
       var icon = this.$createElement('v-icon', 'arrow_upward');
       if (header.align && header.align === 'left') {
         children.push(icon);
@@ -106,13 +106,13 @@ export default {
       var pagination = this.computedPagination;
       var beingSorted = pagination.sortBy === header.value;
       if (beingSorted) {
-        classes.push('active');
+        classes.push('vf-active');
         if (pagination.descending) {
-          classes.push('desc');
+          classes.push('vf-desc');
           data.attrs['aria-sort'] = 'descending';
           data.attrs['aria-label'] += ': Sorted descending. Activate to remove sorting.'; // TODO: Localization
         } else {
-          classes.push('asc');
+          classes.push('vf-asc');
           data.attrs['aria-sort'] = 'ascending';
           data.attrs['aria-label'] += ': Sorted ascending. Activate to sort descending.'; // TODO: Localization
         }

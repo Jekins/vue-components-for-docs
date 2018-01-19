@@ -167,10 +167,10 @@ export default {
   computed: {
     classes () {
       return {
-        'vf-datatable table': true,
+        'vf-datatable vf-table': true,
         'vf-datatable--select-all': this.selectAll !== false,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       }
     },
     computedPagination () {

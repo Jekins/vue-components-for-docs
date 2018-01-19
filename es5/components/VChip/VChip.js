@@ -38,8 +38,8 @@ export default {
         'vf-chip--outline': this.outline,
         'vf-chip--small': this.small,
         'vf-chip--removable': this.close,
-        'vf-theme--light': this.light,
-        'vf-theme--dark': this.dark
+        'theme--light': this.light,
+        'theme--dark': this.dark
       });
 
       return this.textColor || this.outline ? this.addTextColorClassChecks(classes, this.textColor ? 'textColor' : 'color') : classes;

@@ -66,7 +66,7 @@ export default {
       var _this2 = this;
 
       var options = {
-        'class': [('vf-menu__content ' + this.contentClass).trim(), { 'vf-menuable__content__active': this.isActive }],
+        'class': [('vf-menu__content vf-' + this.contentClass).trim(), { 'vf-menuable__content__active': this.isActive }],
         style: this.styles,
         directives: this.genDirectives(),
         ref: 'content',

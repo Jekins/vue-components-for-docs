@@ -47,8 +47,8 @@ export default {
       'class': this.addBackgroundColorClassChecks({
         'vf-footer--absolute': this.absolute,
         'vf-footer--fixed': this.fixed,
-        'vf-theme--dark': this.dark,
-        'vf-theme--light': this.light
+        'theme--dark': this.dark,
+        'theme--light': this.light
       }),
       style: {
         paddingLeft: this.paddingLeft + 'px',

@@ -34,8 +34,8 @@ export default {
         'vf-card--hover': this.hover,
         'vf-card--raised': this.raised,
         'vf-card--tile': this.tile,
-        'vf-theme--light': this.light,
-        'vf-theme--dark': this.dark
+        'theme--light': this.light,
+        'theme--dark': this.dark
       });
     },
     styles: function styles() {

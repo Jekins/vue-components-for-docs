@@ -13,7 +13,7 @@ export default function Grid (name) {
     },
 
     render: (h, { props, data, children }) => {
-      data.staticClass = (`${name} ${data.staticClass || ''}`).trim()
+      data.staticClass = (`vf-${name} vf-${data.staticClass || ''}`).trim()
 
       if (data.attrs) {
         const classes = []
@@ -21,7 +21,7 @@ export default function Grid (name) {
         Object.keys(data.attrs).forEach(key => {
           const value = data.attrs[key]
 
-          if (typeof value === 'string') classes.push(key)
+          if (typeof value === 'string') classes.push('vf-' + key)
           else if (value) classes.push(key)
         })
 

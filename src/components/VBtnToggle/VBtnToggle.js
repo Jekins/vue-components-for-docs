@@ -30,8 +30,8 @@ export default {
       return {
         'vf-btn-toggle': true,
         'vf-btn-toggle--selected': this.hasValue,
-        'vf-theme--light': this.light,
-        'vf-theme--dark': this.dark
+        'theme--light': this.light,
+        'theme--dark': this.dark
       }
     },
     hasValue () {

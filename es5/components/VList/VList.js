@@ -38,8 +38,8 @@ export default {
         'vf-list--dense': this.dense,
         'vf-list--three-line': this.threeLine,
         'vf-list--subheader': this.subheader,
-        'vf-theme--dark dark--bg': this.dark,
-        'vf-theme--light light--bg': this.light
+        'theme--dark dark--bg': this.dark,
+        'theme--light light--bg': this.light
       };
     }
   },
