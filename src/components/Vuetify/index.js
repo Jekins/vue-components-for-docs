@@ -1,7 +1,7 @@
 import application from './mixins/application'
 import theme from './mixins/theme'
 
-const Doctify = {
+const Vuetify = {
   install (Vue, opts = {}) {
     if (this.installed) return
 
@@ -43,4 +43,4 @@ const Doctify = {
   }
 }
 
-export default Doctify
+export default Vuetify

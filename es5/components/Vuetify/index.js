@@ -1,7 +1,7 @@
 import application from './mixins/application';
 import theme from './mixins/theme';
 
-var Vuetify = {
+var Doctify = {
   install: function install(Vue) {
     var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
@@ -45,4 +45,4 @@ var Vuetify = {
   }
 };
 
-export default Vuetify;
+export default Doctify;
