@@ -5646,10 +5646,10 @@ p {
   border-radius: 28px;
 }
 /** Button w/ directional Icon */
-.vf-btn .icon--right {
+.vf-btn .vf-icon--right {
   margin-left: 16px;
 }
-.vf-btn .icon--left {
+.vf-btn .vf-icon--left {
   margin-right: 16px;
 }
 /** Themes */

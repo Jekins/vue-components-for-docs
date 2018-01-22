@@ -40,7 +40,9 @@ export default {
     var thirdPartyIcon = iconName.indexOf('-') > -1;
     if (thirdPartyIcon) iconType = iconName.slice(0, iconName.indexOf('-'));
 
-    data.staticClass = (iconType + ' vf-icon ' + (data.staticClass || '')).trim();
+    data.staticClass = (iconType + ' vf-icon ' + (data.staticClass || '').split(' ').map(function (x) {
+      return 'vf-' + x;
+    })).trim();
     data.attrs = data.attrs || {};
 
     if (!('aria-hidden' in data.attrs)) {
@@ -68,7 +70,7 @@ export default {
     var iconClasses = Object.keys(classes).filter(function (k) {
       return classes[k];
     }).join(' ');
-    iconClasses && (data.staticClass += ' ' + iconClasses);
+    iconClasses && (data.staticClass += ' vf-' + iconClasses);
 
     if (thirdPartyIcon) data.staticClass += ' ' + iconName;else children.push(iconName);
 
