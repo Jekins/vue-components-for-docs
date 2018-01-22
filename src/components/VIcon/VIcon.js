@@ -35,7 +35,7 @@ export default {
     const thirdPartyIcon = iconName.indexOf('-') > -1
     if (thirdPartyIcon) iconType = iconName.slice(0, iconName.indexOf('-'))
 
-    data.staticClass = (`${iconType} vf-icon ${(data.staticClass || '').split(' ').map(x => 'vf-' + x)}`).trim()
+    data.staticClass = (`${iconType} vf-icon ${data.staticClass || ''}`).trim()
     data.attrs = data.attrs || {}
 
     if (!('aria-hidden' in data.attrs)) {
@@ -61,7 +61,7 @@ export default {
     })
 
     const iconClasses = Object.keys(classes).filter(k => classes[k]).join(' ')
-    iconClasses && (data.staticClass += ` vf-${iconClasses}`)
+    iconClasses && (data.staticClass += ` ${iconClasses}`)
 
     if (thirdPartyIcon) data.staticClass += ` ${iconName}`
     else children.push(iconName)
